@@ -59,7 +59,7 @@ a {
 }
 
 article {
-    width: 900px;
+    width: 900px auto;
     margin: 12px auto;
     color: #ffffff;
 }

@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif SC', serif;
+    text-shadow: 0 0 0.2em #ffffff, 0 0 0.2em #ffffff
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+
+html,
+body {
+    background-image: url('../img/zdan.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-align: left;
+    font-size: 13px;
+    color: #000000;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.body {
+    width: 100%;
+    overflow: hidden;
+}
+
+.nav {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nav ul li {
+    float: right;
+}
+
+.nav ul li a {
+    line-height: 50px;
+    font-weight: 700;
+    display: block;
+    padding: 0 20px;
+}
+
+article {
+    width: 900px;
+    margin: 12px auto;
+}
+
+h1 {
+    line-height: 2;
+    text-align: center;
+    font-size: 30px;
+}
+
+p {
+    margin: 14px auto;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+table {
+    width: 900px;
+    margin: 12px auto;
+}
+
+tr,
+td {
+    margin: 14px auto;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.7;
+}

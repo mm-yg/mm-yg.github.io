@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Noto Serif SC', serif;
-    text-shadow: 0 0 0.2em #ffffff;
+    text-shadow: 0 0 0.2em #ffffff, 0 0 0.2em #ffffff;
 }
 ::-webkit-scrollbar {
     display: none;

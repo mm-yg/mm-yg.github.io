@@ -1,15 +1,21 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Noto Serif SC', serif;
+    font-family: "Noto Serif SC", serif;
+    color: #ffffff;
 }
 
-html,
-body {
-    background-image: url('img/100530.jpg');
+::-webkit-scrollbar {
+    display: none;
+  }
+
+html, body {
+    background-image: url("img/100530.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    width: 100%;
+    overflow: hidden;
 }
 
 .bg-text {
@@ -18,23 +24,14 @@ body {
     left: 10px;
     text-align: left;
     font-size: 13px;
-    line-height: 1.5;
-    color: #ffffff;
 }
 
-ul,
-li {
+ul, li {
     list-style: none;
 }
 
 a {
     text-decoration: none;
-    color: #ffffff;
-}
-
-.body {
-    width: 100%;
-    overflow: hidden;
 }
 
 .nav {
@@ -62,7 +59,6 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #ffffff;
 }
 
 .home-text {
@@ -71,12 +67,12 @@ a {
 }
 
 @font-face {
-    font-family: 'Noto Serif Tibetan';
-    src: url('https://fonts.googleapis.com/css2?family=Noto+Serif+Tibetan&display=swap');
+    font-family: "Noto Serif Tibetan";
+    src: url("https://fonts.googleapis.com/css2?family=Noto+Serif+Tibetan&display=swap");
 }
 
 .home-text-bo {
     font-size: 30px;
     line-height: 1.75;
-    font-family: 'Noto Serif Tibetan', serif;
+    font-family: "Noto Serif Tibetan", serif;
 }

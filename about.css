@@ -1,19 +1,21 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Noto Serif SC', serif;
+    font-family: "Noto Serif SC", serif;
+    color: #ffffff;
 }
 
 ::-webkit-scrollbar {
     display: none;
   }
 
-html,
-body {
-    background-image: url('img/230719.jpg');
+html, body {
+    background-image: url("img/230719.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    width: 100%;
+    overflow: hidden;
 }
 
 .bg-text {
@@ -22,23 +24,14 @@ body {
     left: 10px;
     text-align: left;
     font-size: 13px;
-    line-height: 1.5;
-    color: #ffffff;
 }
 
-ul,
-li {
+ul, li {
     list-style: none;
 }
 
 a {
     text-decoration: none;
-    color: #ffffff;
-}
-
-.body {
-    width: 100%;
-    overflow: hidden;
 }
 
 .nav {

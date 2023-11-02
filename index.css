@@ -4,7 +4,7 @@
     font-family: "Noto Serif SC", serif;
     font-size: 20px;
     color: #ffffff;
-    text-shadow: 0 0 0.2em #202020;
+    text-shadow: 0 0 0.2em #4d4d4d;
 }
 
 html, body {
@@ -78,4 +78,40 @@ nav {
     font-size: 30px;
     line-height: 1.75;
     font-family: "Noto Serif Tibetan", serif;
+}
+
+.hamburger {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    html, body {
+        background-position: center center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 10px;
+        top: 60px;
+        background: #00000050;
+        border-radius: 4px;
+        z-index: 10;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
 }

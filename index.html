@@ -21,6 +21,7 @@
             <li><a href="about.html">缘起 💡</a></li>
             <li><a href="https://space.bilibili.com/429836216">b站 🍻</a></li>
         </ul>
+        <button class="hamburger">👀</button>
     </nav>
     <div class="home">
         <span class="home-text-bo" lang="bo">གླུ་འདི་ཁྱེད་ལ་ལེན་བསམ་པའི་གླུ་དབྱངས་ཡིན།</span><br>
@@ -31,6 +32,12 @@
         北京西城<br>
         鹿鸣妈妈 摄
     </div>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            const navList = document.querySelector('.nav-list');
+            navList.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>

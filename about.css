@@ -2,12 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: "Noto Serif SC", serif;
+    font-size: 20px;
     color: #ffffff;
+    text-shadow: 0 0 0.2em #202020;
 }
-
-::-webkit-scrollbar {
-    display: none;
-  }
 
 html, body {
     background-image: url("img/231030.jpg");
@@ -15,7 +13,11 @@ html, body {
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .bg-text {
@@ -26,37 +28,31 @@ html, body {
     font-size: 13px;
 }
 
-ul, li {
-    list-style: none;
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
 }
 
-a {
-    text-decoration: none;
-}
-
-.nav {
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-    font-size: 18px;
-}
-
-.nav ul {
-    width: 100%;
-    padding: 0;
+.nav-list {
+    list-style-type: none;
     margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
-.nav ul li {
-    float: right;
-    margin: 0 10px;
+.nav-list li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px 15px;
+    transition: background 0.3s;
 }
 
-.nav ul li a {
-    line-height: 50px;
-    font-weight: 700;
-    display: block;
-    padding: 0 20px;
+.nav-list li a:hover {
+    background-color: #ffffff20;
+    border-radius: 4px;
 }
 
 article {
@@ -79,26 +75,34 @@ p {
     line-height: 2;
 }
 
+.hamburger {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
-    .nav ul li {
-        float: none;
+    .hamburger {
         display: block;
-        text-align: center;
-    }
-    
-    .home-text, .home-text-bo {
-        font-size: 24px;
     }
 
-    .nav ul li a {
-        padding: 5px 10px;
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 10px;
+        top: 60px;
+        background: #00000050;
+        border-radius: 4px;
+        z-index: 10;
     }
 
-    h1 {
-        font-size: 24px;
+    .nav-list li {
+        margin: 10px 0;
     }
 
-    p {
-        font-size: 16px;
+    .nav-list.active {
+        display: flex;
     }
 }

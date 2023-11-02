@@ -59,24 +59,9 @@ a {
     padding: 0 20px;
 }
 
-@media (max-width: 768px) {
-    .nav ul li {
-        float: none;
-        display: block;
-        text-align: center;
-    }
-    
-    .home-text, .home-text-bo {
-        font-size: 24px;
-    }
-
-    .nav ul li a {
-        padding: 5px 10px;
-    }
-}
-
 article {
-    width: 900px;
+    max-width: 900px;
+    width: 90%;
     margin: 12px auto;
     color: #ffffff;
 }
@@ -92,4 +77,28 @@ p {
     text-align: justify;
     font-size: 20px;
     line-height: 2;
+}
+
+@media (max-width: 768px) {
+    .nav ul li {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    
+    .home-text, .home-text-bo {
+        font-size: 24px;
+    }
+
+    .nav ul li a {
+        padding: 5px 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
 }

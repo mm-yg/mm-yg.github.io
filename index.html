@@ -14,13 +14,25 @@
 </head>
 
 <body>
-    <div class="nav">
-        <ul>
-            <li><a href="music.html">歌声</a></li>
-            <li><a href="about.html">缘起</a></li>
+    <nav>
+        <ul class="nav-list">
             <li><a href="index.html">56+</a></li>
+            <li><a href="about.html">缘起</a></li>
+            <li><a href="music.html">歌声</a></li>
         </ul>
-    </div>
+        <div class="search-container">
+            <form action="search-results.html" method="get">
+                <input type="text"
+                placeholder="汉语歌名"
+                name="query"
+                id="searchInput"
+                style="color: black; text-shadow: none">
+                <button type="submit">搜索</button>
+            </form>
+        </div>
+        
+    </nav>
+    <script src="index.js"></script>
     <div class="home">
         <span class="home-text-bo" lang="bo">གླུ་འདི་ཁྱེད་ལ་ལེན་བསམ་པའི་གླུ་དབྱངས་ཡིན།</span><br>
         <span class="home-text">这是想唱给你的歌 :)</span><br>

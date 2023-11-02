@@ -15,6 +15,7 @@
 
 <body>
     <nav>
+        <button class="hamburger">&#9776;</button>
         <ul class="nav-list">
             <li><a href="index.html">56+</a></li>
             <li><a href="about.html">缘起</a></li>
@@ -22,15 +23,11 @@
         </ul>
         <div class="search-container">
             <form action="search-results.html" method="get">
-                <input type="text"
-                placeholder="汉语歌名"
-                name="query"
-                id="searchInput"
-                style="color: black; text-shadow: none">
+                <input type="text" placeholder="汉语歌名" name="query" id="searchInput" style="color: black; text-shadow: none">
                 <button type="submit">搜索</button>
+                <button type="button" id="searchIcon">🔍</button>
             </form>
         </div>
-        
     </nav>
     <script src="index.js"></script>
     <div class="home">
@@ -42,6 +39,16 @@
         北京西城<br>
         鹿鸣妈妈 摄
     </div>
+    <script>
+        document.querySelector(".hamburger").addEventListener("click", function() {
+            var navList = document.querySelector(".nav-list");
+            if (navList.style.display === "none" || navList.style.display === "") {
+                navList.style.display = "block";
+            } else {
+                navList.style.display = "none";
+            }
+        });
+    </script>
 </body>
 
 </html>

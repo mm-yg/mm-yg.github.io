@@ -72,7 +72,7 @@ nav {
 }
 
 #searchBox {
-    width: calc(90% - 200px);
+    width: calc(90% - 150px);
     padding: 10px 20px;
     border-radius: 25px;
     border: 2px solid #aaaaaa;

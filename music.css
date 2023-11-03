@@ -67,11 +67,12 @@ nav {
 .search-container {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
+    flex-wrap: wrap;
 }
 
 #searchBox {
-    width: 300px;
+    width: calc(90% - 200px);
     padding: 10px 20px;
     border-radius: 25px;
     border: 2px solid #aaaaaa;
@@ -80,6 +81,7 @@ nav {
     transition: border 0.3s;
     color:#007BFF;
     text-shadow: none;
+    box-sizing: border-box;
 }
 
 #searchBox:focus {
@@ -87,6 +89,7 @@ nav {
 }
 
 button {
+    width: auto;
     padding: 10px 20px;
     font-size: 18px;
     border-radius: 25px;

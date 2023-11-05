@@ -1,39 +1,40 @@
 <!DOCTYPE html>
+<html lang="zh-CN">
 
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <link rel='stylesheet' href='../css/zdan.css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/zdan.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
     <title>真的爱你</title>
-    <link rel='shortcut icon' type='image/x-icon' href='../favicon.png'>
 </head>
 
 <body>
-    <div class='nav'>
-        <ul>
-            <li>
-                <a href='../index.html'>歌声</a>
-            </li>
-            <li>
-                <a href='../about.html'>缘起</a>
-            </li>
-            <li>
-                <a href='../index.html'>56+</a>
-            </li>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="../music.html">歌声 🔍</a></li>
+            <li><a href="../index.html">56+ 🇨🇳</a></li>
+            <li><a href="../about.html">缘起 💡</a></li>
+            <li><a href="../thanks.html">致谢 🌸</a></li>
+            <li><a href="https://space.bilibili.com/429836216">b站 🍻</a></li>
         </ul>
-    </div>
-    <div class='bg-text'>
-        Photo by Fuu J on Unsplash
+        <button class="hamburger">👀</button>
+    </nav>
+    <div class="bg-text">
+        2008年5月2日<br>
+        北京石景山<br>
+        鹿鸣家人 摄
     </div>
     <article>
         <h1>真的爱你</h1>
-        <p style='text-align: center;'>
-            2023年8月 · 美国加州戈利塔
-        </p>
+        <p style="text-align: center;">2023年8月 · 美国加州戈利塔</p>
+        <!--
+        <iframe src='&autoplay=0&danmaku=0' allowfullscreen='allowfullscreen' width='100%' height='500' scrolling='no' frameborder="0" sandbox='allow-top-navigation allow-same-origin allow-forms allow-scripts'></iframe>
+        -->
         <p>
             语言：汉语-粤语-广府片-香港，英语<br>
             作词：梁美薇（小美）<br>
@@ -46,163 +47,203 @@
             [1] 刘倩. 香港粤语塞擦音、擦音声母的音变考察——以三十年来香港粤语歌词为例 [J]. 暨南学报（哲学社会科学版）, 2010, 32(6): 123-129.<br>
             [2] Zee, Eric. Chinese (Hong Kong Cantonese) [J]. Journal of the International Phonetic Association, 1991, 21(1): 46-48.<br>
             在线查询：<br>
-            维基词典，https://www.wiktionary.org<br>
-            粵語審音配詞字庫，https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can
+            [1] 维基词典，https://www.wiktionary.org<br>
+            [2] 粵語審音配詞字庫，https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can
         </p>
+        <br>
+        <div class="button-container">
+            <button id="toggle-ipa">音标</button>
+            <button id="toggle-translation">翻译</button>
+        </div>
+        <div id="lyrics-container">
+            <div class="lyric-block">
+                <p class="lyric-line">When you hold me in your arms</p>
+                <p class="lyric-ipa hidden">wɛn ju hoʊɫd mi ɪn jɔɹ ɑɹmz</p>
+                <p class="lyric-translation hidden">当你将我拥入怀抱</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">I feel so safe and warm</p>
+                <p class="lyric-ipa hidden">aɪ fiɫ soʊ seɪf ænd wɔɹm</p>
+                <p class="lyric-translation hidden">我感到安宁而温暖</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Let me say to you</p>
+                <p class="lyric-ipa hidden">lɛt mi seɪ tu ju</p>
+                <p class="lyric-translation hidden">请让我告诉你</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">I really love you</p>
+                <p class="lyric-ipa hidden">aɪ ɹɪli lʌv ju</p>
+                <p class="lyric-translation hidden">我真的很爱你</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">无法可修饰的一对手</p>
+                <p class="lyric-ipa hidden">mou faːt̚ hɔː sɐu sɪk̚ tɪk̚ jɐt̚ tɵy sɐu</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">带出温暖永远在背后</p>
+                <p class="lyric-ipa hidden">taːi t͡ʃʰɵt̚ wɐn nyːn wɪŋ jyːn t͡sɔːi puːi hɐu</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">纵使啰嗦始终关注</p>
+                <p class="lyric-ipa hidden">t͡sʊŋ siː lɔː sɔː t͡sʰiː t͡sʊŋ kʷaːn t͡ʃyː</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">不懂珍惜太内疚</p>
+                <p class="lyric-ipa hidden">pɐt̚ tʊŋ t͡sɐn sɪk̚ tʰaːi nɔːi kɐu</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">沉醉于音阶她不赞赏</p>
+                <p class="lyric-ipa hidden">t͡sʰɐm t͡ʃɵy jyː jɐm kaːi tʰaː pɐt̚ t͡saːn sœːŋ</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">母亲的爱却永未退让</p>
+                <p class="lyric-ipa hidden">mou t͡sʰɐn tɪk̚ ɔːi kʰœːk̚ wɪŋ mei tʰɵy jœːŋ</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">决心冲开心中挣扎</p>
+                <p class="lyric-ipa hidden">kʰyːt̚ sɐm t͡sʰʊŋ hɔːi sɐm t͡sʊŋ t͡sɐŋ t͡saːt̚</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">亲恩终可报答</p>
+                <p class="lyric-ipa hidden">t͡sʰɐn jɐn t͡sʊŋ hɔː pou taːp̚</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">春风化雨暖透我的心</p>
+                <p class="lyric-ipa hidden">t͡ʃʰɵn fʊŋ faː jyː nyːn tʰɐu ŋɔː tɪk̚ sɐm</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">一生眷顾无言地送赠</p>
+                <p class="lyric-ipa hidden">jɐt̚ sɐŋ kyːn kuː mou jiːn tei sʊŋ t͡sɐŋ</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">是你多么温馨的目光</p>
+                <p class="lyric-ipa hidden">siː nei tɔː mɔː wɐn hɪŋ tɪk̚ mʊk̚ kʷɔːŋ</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">教我坚毅望着前路</p>
+                <p class="lyric-ipa hidden">kaːu ŋɔː kiːn ŋɐi mɔːŋ t͡ʃœːk̚ t͡sʰiːn lou</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">叮嘱我跌倒不应放弃</p>
+                <p class="lyric-ipa hidden">tɪŋ t͡sʊk̚ ŋɔː tiːt̚ tou pɐt̚ jɪŋ fɔːŋ hei</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">没法解释怎可报尽亲恩</p>
+                <p class="lyric-ipa hidden">muːt̚ faːt̚ kaːi sɪk̚ t͡sɐm hɔː pou t͡ʃɵn t͡sʰɐn jɐn</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">爱意宽大是无限</p>
+                <p class="lyric-ipa hidden">ɔːi jiː fuːn taːi siː mou haːn</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">请准我说声真的爱你</p>
+                <p class="lyric-ipa hidden">t͡sʰɪŋ t͡ʃɵn ŋɔː syːt̚ sɪŋ t͡sɐn tɪk̚ ɔːi nei</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Thank you mom for all your love</p>
+                <p class="lyric-ipa hidden">θæŋk ju mɑm fɔɹ ɔɫ jɔɹ lʌv</p>
+                <p class="lyric-translation hidden">感谢妈妈所有的爱</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">You know I always love you</p>
+                <p class="lyric-ipa hidden">ju noʊ aɪ ɔɫweɪz lʌv ju</p>
+                <p class="lyric-translation hidden">你知道我一直爱你</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">仍记起温馨的一对手</p>
+                <p class="lyric-ipa hidden">jɪŋ kei hei wɐn hɪŋ tɪk̚ jɐt̚ tɵy sɐu</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">始终给我照顾未变样</p>
+                <p class="lyric-ipa hidden">t͡sʰiː t͡sʊŋ kʰɐp̚ ŋɔː t͡siːu kuː mei piːn jœːŋ</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">理想今天终于等到</p>
+                <p class="lyric-ipa hidden">lei sœːŋ kɐm tʰiːn t͡sʊŋ jyː tɐŋ tou</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">分享光辉盼做到</p>
+                <p class="lyric-ipa hidden">fɐn hœːŋ kʷɔːŋ fɐi pʰaːn t͡sou tou</p>
+            </div>
+        </div>
+        <div class="lyric-block">
+            <p class="lyric-line">春风化雨暖透我的心</p>
+            <p class="lyric-ipa hidden">t͡ʃʰɵn fʊŋ faː jyː nyːn tʰɐu ŋɔː tɪk̚ sɐm</p>
+        </div>
+        <div class="lyric-block">
+            <p class="lyric-line">一生眷顾无言地送赠</p>
+            <p class="lyric-ipa hidden">jɐt̚ sɐŋ kyːn kuː mou jiːn tei sʊŋ t͡sɐŋ</p>
+        </div>
+        <div class="lyric-block">
+            <p class="lyric-line">是你多么温馨的目光</p>
+            <p class="lyric-ipa hidden">siː nei tɔː mɔː wɐn hɪŋ tɪk̚ mʊk̚ kʷɔːŋ</p>
+        </div>
+        <div class="lyric-block">
+            <p class="lyric-line">教我坚毅望着前路</p>
+            <p class="lyric-ipa hidden">kaːu ŋɔː kiːn ŋɐi mɔːŋ t͡ʃœːk̚ t͡sʰiːn lou</p>
+        </div>
+        <div class="lyric-block">
+            <p class="lyric-line">叮嘱我跌倒不应放弃</p>
+            <p class="lyric-ipa hidden">tɪŋ t͡sʊk̚ ŋɔː tiːt̚ tou pɐt̚ jɪŋ fɔːŋ hei</p>
+        </div>
+        <div class="lyric-block">
+            <p class="lyric-line">没法解释怎可报尽亲恩</p>
+            <p class="lyric-ipa hidden">muːt̚ faːt̚ kaːi sɪk̚ t͡sɐm hɔː pou t͡ʃɵn t͡sʰɐn jɐn</p>
+        </div>
+        <div class="lyric-block">
+            <p class="lyric-line">爱意宽大是无限</p>
+            <p class="lyric-ipa hidden">ɔːi jiː fuːn taːi siː mou haːn</p>
+        </div>
+        <div class="lyric-block">
+            <p class="lyric-line">请准我说声真的爱你</p>
+            <p class="lyric-ipa hidden">t͡sʰɪŋ t͡ʃɵn ŋɔː syːt̚ sɪŋ t͡sɐn tɪk̚ ɔːi nei</p>
+        </div>
+        <div class="lyric-block">
+            <p class="lyric-line">是你多么温馨的目光</p>
+            <p class="lyric-ipa hidden">siː nei tɔː mɔː wɐn hɪŋ tɪk̚ mʊk̚ kʷɔːŋ</p>
+        </div>
+        <div class="lyric-block">
+            <p class="lyric-line">教我坚毅望着前路</p>
+            <p class="lyric-ipa hidden">kaːu ŋɔː kiːn ŋɐi mɔːŋ t͡ʃœːk̚ t͡sʰiːn lou</p>
+        </div>
+        <div class="lyric-block">
+            <p class="lyric-line">叮嘱我跌倒不应放弃</p>
+            <p class="lyric-ipa hidden">tɪŋ t͡sʊk̚ ŋɔː tiːt̚ tou pɐt̚ jɪŋ fɔːŋ hei</p>
+        </div>
+        <div class="lyric-block">
+            <p class="lyric-line">没法解释怎可报尽亲恩</p>
+            <p class="lyric-ipa hidden">muːt̚ faːt̚ kaːi sɪk̚ t͡sɐm hɔː pou t͡ʃɵn t͡sʰɐn jɐn</p>
+        </div>
+        <div class="lyric-block">
+            <p class="lyric-line">爱意宽大是无限</p>
+            <p class="lyric-ipa hidden">ɔːi jiː fuːn taːi siː mou haːn</p>
+        </div>
+        <div class="lyric-block">
+            <p class="lyric-line">请准我说声真的爱你</p>
+            <p class="lyric-ipa hidden">t͡sʰɪŋ t͡ʃɵn ŋɔː syːt̚ sɪŋ t͡sɐn tɪk̚ ɔːi nei</p>
+        </div>
     </article>
-    <!--
-    <iframe src='&autoplay=0&danmaku=0' allowfullscreen='allowfullscreen' width='100%' height='500' scrolling='no' frameborder="0" sandbox='allow-top-navigation allow-same-origin allow-forms allow-scripts'></iframe>
-    -->
-    <table>
-        <tr>
-            <td>
-                <p>
-                    <b style='font-size: 20px;'>歌词：</b><br>
-                    <p>When you hold me in your arms<br>
-                    I feel so safe and warm<br>
-                    Let me say to you<br>
-                    I really love you<br>
-                    无法可修饰的一对手<br>
-                    带出温暖永远在背后<br>
-                    纵使啰嗦始终关注<br>
-                    不懂珍惜太内疚<br>
-                    沉醉于音阶她不赞赏<br>
-                    母亲的爱却永未退让<br>
-                    决心冲开心中挣扎<br>
-                    亲恩终可报答<br>
-                    春风化雨暖透我的心<br>
-                    一生眷顾无言地送赠<br>
-                    是你多么温馨的目光<br>
-                    教我坚毅望着前路<br>
-                    叮嘱我跌倒不应放弃<br>
-                    没法解释怎可报尽亲恩<br>
-                    爱意宽大是无限<br>
-                    请准我说声真的爱你<br>
-                    Thank you mom for all your love<br>
-                    You know I always love you<br>
-                    仍记起温馨的一对手<br>
-                    始终给我照顾未变样<br>
-                    理想今天终于等到<br>
-                    分享光辉盼做到<br>
-                    春风化雨暖透我的心<br>
-                    一生眷顾无言地送赠<br>
-                    是你多么温馨的目光<br>
-                    教我坚毅望着前路<br>
-                    叮嘱我跌倒不应放弃<br>
-                    没法解释怎可报尽亲恩<br>
-                    爱意宽大是无限<br>
-                    请准我说声真的爱你<br>
-                    是你多么温馨的目光<br>
-                    教我坚毅望着前路<br>
-                    叮嘱我跌倒不应放弃<br>
-                    没法解释怎可报尽亲恩<br>
-                    爱意宽大是无限<br>
-                    请准我说声真的爱你</p>
-                </p>
-            </td>
-            <td>
-                <p>
-                    <b style='font-size: 20px;'>翻译：</b><br>
-                    <p>当你将我拥入怀抱<br>
-                    我感到安宁而温暖<br>
-                    请让我告诉你<br>
-                    我真的很爱你<br>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                    感谢妈妈所有的爱<br>
-                    你知道我一直爱你<br>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
-                </p>
-            </td>
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <td>
-                <p>
-                    <b style='font-size: 20px;'>国际音标（粤语，未标调）：</b><br>
-                    <p style='font-family: "Times New Roman", Times, serif;'>
-                        mou faːt̚ hɔː sɐu sɪk̚ tɪk̚ jɐt̚ tɵy sɐu<br>
-                        taːi t͡ʃʰɵt̚ wɐn nyːn wɪŋ jyːn t͡sɔːi puːi hɐu<br>
-                        t͡sʊŋ siː lɔː sɔː t͡sʰiː t͡sʊŋ kʷaːn t͡ʃyː<br>
-                        pɐt̚ tʊŋ t͡sɐn sɪk̚ tʰaːi nɔːi kɐu<br>
-                        t͡sʰɐm t͡ʃɵy jyː jɐm kaːi tʰaː pɐt̚ t͡saːn sœːŋ<br>
-                        mou t͡sʰɐn tɪk̚ ɔːi kʰœːk̚ wɪŋ mei tʰɵy jœːŋ<br>
-                        kʰyːt̚ sɐm t͡sʰʊŋ hɔːi sɐm t͡sʊŋ t͡sɐŋ t͡saːt̚<br>
-                        t͡sʰɐn jɐn t͡sʊŋ hɔː pou taːp̚<br>
-                        t͡ʃʰɵn fʊŋ faː jyː nyːn tʰɐu ŋɔː tɪk̚ sɐm<br>
-                        jɐt̚ sɐŋ kyːn kuː mou jiːn tei sʊŋ t͡sɐŋ<br>
-                        siː nei tɔː mɔː wɐn hɪŋ tɪk̚ mʊk̚ kʷɔːŋ<br>
-                        kaːu ŋɔː kiːn ŋɐi mɔːŋ t͡ʃœːk̚ t͡sʰiːn lou<br>
-                        tɪŋ t͡sʊk̚ ŋɔː tiːt̚ tou pɐt̚ jɪŋ fɔːŋ hei<br>
-                        muːt̚ faːt̚ kaːi sɪk̚ t͡sɐm hɔː pou t͡ʃɵn t͡sʰɐn jɐn<br>
-                        ɔːi jiː fuːn taːi siː mou haːn<br>
-                        t͡sʰɪŋ t͡ʃɵn ŋɔː syːt̚ sɪŋ t͡sɐn tɪk̚ ɔːi nei<br>
-                        jɪŋ kei hei wɐn hɪŋ tɪk̚ jɐt̚ tɵy sɐu<br>
-                        t͡sʰiː t͡sʊŋ kʰɐp̚ ŋɔː t͡siːu kuː mei piːn jœːŋ<br>
-                        lei sœːŋ kɐm tʰiːn t͡sʊŋ jyː tɐŋ tou<br>
-                        fɐn hœːŋ kʷɔːŋ fɐi pʰaːn t͡sou tou<br>
-                        t͡ʃʰɵn fʊŋ faː jyː nyːn tʰɐu ŋɔː tɪk̚ sɐm<br>
-                        jɐt̚ sɐŋ kyːn kuː mou jiːn tei sʊŋ t͡sɐŋ<br>
-                        siː nei tɔː mɔː wɐn hɪŋ tɪk̚ mʊk̚ kʷɔːŋ<br>
-                        kaːu ŋɔː kiːn ŋɐi mɔːŋ t͡ʃœːk t͡sʰiːn lou<br>
-                        tɪŋ t͡sʊk̚ ŋɔː tiːt̚ tou pɐt̚ jɪŋ fɔːŋ hei<br>
-                        muːt̚ faːt̚ kaːi sɪk̚ t͡sɐm hɔː pou t͡ʃɵn t͡sʰɐn jɐn<br>
-                        ɔːi jiː fuːn taːi siː mou haːn<br>
-                        t͡sʰɪŋ t͡ʃɵn ŋɔː syːt̚ sɪŋ t͡sɐn tɪk̚ ɔːi nei<br>
-                        siː nei tɔː mɔː wɐn hɪŋ tɪk̚ mʊk̚ kʷɔːŋ<br>
-                        kaːu ŋɔː kiːn ŋɐi mɔːŋ t͡ʃœːk̚ t͡sʰiːn lou<br>
-                        tɪŋ t͡sʊk̚ ŋɔː tiːt̚ tou pɐt̚ jɪŋ fɔːŋ hei<br>
-                        muːt̚ faːt̚ kaːi sɪk̚ t͡sɐm hɔː pou t͡ʃɵn t͡sʰɐn jɐn<br>
-                        ɔːi jiː fuːn taːi siː mou haːn<br>
-                        t͡sʰɪŋ t͡ʃɵn ŋɔː syːt̚ sɪŋ<br>
-                        t͡sɐn tɪk̚ ɔːi nei
-                    </p>
-                </p>
-            </td>
-            <td>
-                <p>
-                    <b style='font-size: 20px;'>粤拼：</b><br>
-                    <p style='font-family: "Times New Roman", Times, serif;'>
-                        mou4 faat3 ho2 sau1 sik1 dik1 jat1 deoi3 sau2<br>
-                        daai3 ceot1 wan1 nyun5 wing5 jyun5 zoi6 bui6 hau6<br>
-                        zung3 si2 lo1 so1 ci2 zung1 gwaan1 zyu3<br>
-                        bat1 dung2 zan1 sik1 taai3 noi6 gau3<br>
-                        cam4 zeoi3 jyu1 jam1 gaai1 taa1 bat1 zaan3 soeng2<br>
-                        mou5 can1 dik1 oi3 koek3 wing5 mei6 teoi3 joeng6<br>
-                        kyut3 sam1 cung1 hoi1 sam1 zung1 zang1 zaat3<br>
-                        can1 jan1 zung1 ho2 bou3 daap3<br>
-                        ceon1 fung1 faa3 jyu5 nyun5 tau3 ngo5 dik1 sam1<br>
-                        jat1 sang1 gyun3 gu3 mou4 jin4 dei6 sung3 zang6<br>
-                        si6 nei5 do1 mo1 wan1 hing1 dik1 muk6 gwong1<br>
-                        gaau3 ngo5 gin1 ngai6 mong6 zoek6 cin4 lou6<br>
-                        ding1 zuk1 ngo5 dit3 dou2 bat1 jing13 fong3 hei3<br>
-                        mut6 faat3 gaai2 sik1 zam2 ho2 bou3 zeon6 can1 jan1<br>
-                        oi3 ji3 fun1 daai6 si6 mou4 haan6<br>
-                        cing2 zeon2 ngo5 syut3 sing1 zan1 dik1 oi3 nei5<br>
-                        jing4 gei3 hei2 wan1 hing1 dik1 jat1 deoi3 sau2<br>
-                        ci2 zung1 kap1 ngo5 ziu3 gu3 mei6 bin3 joeng6<br>
-                        lei5 soeng2 gam1 tin1 zung1 jyu1 dang2 dou3<br>
-                        fan1 hoeng2 gwong1 fai1 paan3 zou6 dou3<br>
-                        ceon1 fung1 faa3 jyu5 nyun5 tau3 ngo5 dik1 sam1<br>
-                        jat1 sang1 gyun3 gu3 mou4 jin4 dei6 sung3 zang6<br>
-                        si6 nei5 do1 mo1 wan1 hing1 dik1 muk6 gwong1<br>
-                        gaau3 ngo5 gin1 ngai6 mong6 zoek6 cin4 lou6<br>
-                        ding1 zuk1 ngo5 dit3 dou2 bat1 jing13 fong3 hei3<br>
-                        mut6 faat3 gaai2 sik1 zam2 ho2 bou3 zeon6 can1 jan1<br>
-                        oi3 ji3 fun1 daai6 si6 mou4 haan6<br>
-                        cing2 zeon2 ngo5 syut3 sing1 zan1 dik1 oi3 nei5<br>
-                        si6 nei5 do1 mo1 wan1 hing1 dik1 muk6 gwong1<br>
-                        gaau3 ngo5 gin1 ngai6 mong6 zoek6 cin4 lou6<br>
-                        ding1 zuk1 ngo5 dit3 dou2 bat1 jing13 fong3 hei3<br>
-                        mut6 faat3 gaai2 sik1 zam2 ho2 bou3 zeon6 can1 jan1<br>
-                        oi3 ji3 fun1 daai6 si6 mou4 haan6<br>
-                        cing2 zeon2 ngo5 syut3 sing1<br>
-                        zan1 dik1 oi3 nei5
-                    </p>
-                </p>
-            </td>
-        </tr>
-    </table>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('toggle-ipa').addEventListener('click', function() {
+                var ipaSymbols = document.querySelectorAll('.lyric-ipa');
+                ipaSymbols.forEach(function(ipa) {
+                    ipa.classList.toggle('show');
+                });
+            });
+            document.getElementById('toggle-translation').addEventListener('click', function() {
+                var translations = document.querySelectorAll('.lyric-translation');
+                translations.forEach(function(translation) {
+                    translation.classList.toggle('show');
+                });
+            });
+        });
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            const navList = document.querySelector('.nav-list');
+            navList.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>

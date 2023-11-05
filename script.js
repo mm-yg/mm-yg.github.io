@@ -30,27 +30,50 @@ const pages = [
 ];
 
 function searchWebsite() {
-    const searchTerm = document.getElementById('searchBox').value.toLowerCase().trim();
+    const searchTerm = document.getElementById('searchBox').value.trim();
     const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = '';
 
-    let found = false;
+    let foundTitleMatch = false;
 
-    for (let page of pages) {
-        if (page.title.toLowerCase().includes(searchTerm)) {
-            found = true;
-            const link = document.createElement('a');
-            link.href = page.url;
-            link.textContent = page.title;
-            resultsDiv.appendChild(link);
+    pages.forEach(page => {
+        if (page.title.toLowerCase().includes(searchTerm.toLowerCase())) {
+            foundTitleMatch = true;
+            addResultLink(page);
+        } else {
+            fetchPageContent(page, searchTerm, addResultLink);
         }
-    }
+    });
 
-    if (!found) {
-        const noResultLink = document.createElement('a');
-        noResultLink.textContent = '欢迎给鹿鸣推荐新歌哦(*¯︶¯*)';
-        resultsDiv.appendChild(noResultLink);
-    }
+    setTimeout(() => {
+        if (!resultsDiv.hasChildNodes()) {
+            const noResultText = document.createElement('span');
+            noResultText.textContent = '欢迎给鹿鸣推荐新歌哦(*¯︶¯*)';
+            resultsDiv.appendChild(noResultText);
+        }
+    }, 300);
+}
+
+function fetchPageContent(page, searchTerm, callback) {
+    fetch(page.url)
+        .then(response => response.text())
+        .then(content => {
+            const lowerCaseContent = content.toLowerCase();
+            if (lowerCaseContent.includes(searchTerm.toLowerCase())) {
+                callback(page);
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching page content:', error);
+        });
+}
+
+function addResultLink(page) {
+    const resultsDiv = document.getElementById('results');
+    const link = document.createElement('a');
+    link.href = page.url;
+    link.textContent = page.title;
+    resultsDiv.appendChild(link);
 }
 
 document.querySelector('.hamburger').addEventListener('click', function() {

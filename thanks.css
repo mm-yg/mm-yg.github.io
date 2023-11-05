@@ -4,16 +4,11 @@
     font-family: "Noto Serif SC", serif;
     font-size: 20px;
     color: #ffffff;
-    text-shadow:
-    0 0 0.2em #4d4d4d,
-    -.5px -.5px 0 #000000,
-    .5px -.5px 0 #000000,
-    -.5px .5px 0 #000000,
-    .5px .5px 0 #000000;
+    text-shadow: 0 0 0.2em #4d4d4d;
 }
 
 html, body {
-    background-image: url("../img/arrj.jpg");
+    background-image: url("img/210902.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -50,6 +45,7 @@ nav {
 
 .nav-list li a {
     text-decoration: none;
+    color: #ffffff;
     padding: 8px 15px;
     transition: background 0.3s;
 }
@@ -63,67 +59,25 @@ article {
     max-width: 900px;
     width: 90%;
     margin: 12px auto;
+    color: #ffffff;
 }
 
 h1 {
-    line-height: 1.5;
+    line-height: 2;
     text-align: center;
     font-size: 25px;
 }
 
+h3 {
+    line-height: 2;
+    text-align: justify;
+    font-size: 22px;
+}
+
 p {
-    line-height: 1.7;
+    line-height: 2;
     margin: 14px auto;
-    text-align: left;
-    font-size: 19px;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 19px;
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 19px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 2px 4px #4d4d4d;
-}
-
-button:hover {
-    color: #000000;
-    background-color: #ffffff;
-    text-shadow: none;
-    box-shadow: 0 2.5px 5px #4d4d4d;
-}
-
-.lyric-line,
-.lyric-ipa,
-.lyric-translation {
-    text-align: center;
-}
-
-.hidden {
-    display: none;
-}
-
-.lyric-ipa {
-    font-family: "Times New Roman", Times, serif;
-    color: #f5ff62;
-}
-
-.lyric-translation {
-    color: #ffdb81;
-}
-
-.lyric-ipa.show,
-.lyric-translation.show {
-    display: block;
+    text-align: justify;
 }
 
 .hamburger {
@@ -131,26 +85,6 @@ button:hover {
     background: transparent;
     border: none;
     cursor: pointer;
-    padding: 0;
-    font-size: 20px;
-    border: none;
-    transition: none;
-    box-shadow: none;
-}
-
-.hamburger:hover {
-    background: transparent;
-    text-shadow:
-    0 0 0.2em #4d4d4d;
-    box-shadow: none;
-}
-
-.pdf-container {
-    display: block;
-}
-
-.mobile-pdf {
-    display: none;
 }
 
 @media (max-width: 768px) {
@@ -179,15 +113,5 @@ button:hover {
 
     .nav-list.active {
         display: flex;
-    }
-
-    .pdf-container {
-        display: none;
-    }
-
-    .mobile-pdf {
-        display: block;
-        text-align: center;
-        padding: 20px;
     }
 }

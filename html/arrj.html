@@ -1,39 +1,43 @@
 <!DOCTYPE html>
+<html lang="zh-CN">
 
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <link rel='stylesheet' href='../css/arrj.css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/arrj.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
     <title>爱人如己</title>
-    <link rel='shortcut icon' type='image/x-icon' href='../favicon.png'>
 </head>
 
 <body>
-    <div class='nav'>
-        <ul>
-            <li>
-                <a href='../index.html'>歌声</a>
-            </li>
-            <li>
-                <a href='../about.html'>缘起</a>
-            </li>
-            <li>
-                <a href='../index.html'>56+</a>
-            </li>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="../music.html">歌声 🔍</a></li>
+            <li><a href="../index.html">56+ 🇨🇳</a></li>
+            <li><a href="../about.html">缘起 💡</a></li>
+            <li><a href="../thanks.html">致谢 🌸</a></li>
+            <li><a href="https://space.bilibili.com/429836216">b站 🍻</a></li>
         </ul>
-    </div>
-    <div class='bg-text'>
-        Photo by Fuu J on Unsplash
+        <button class="hamburger">👀</button>
+    </nav>
+    <div class="bg-text">
+        2008年5月2日<br>
+        北京西城<br>
+        鹿鸣家人 摄
     </div>
     <article>
-        <h1>Sima Iskadaiza｜爱人如己</h1>
-        <p style='text-align: center;'>
-            2023年8月 · 美国加州戈利塔
-        </p>
+        <h1>
+            Masial Malka Bunun<br>
+            爱人如己
+        </h1>
+        <p style="text-align: center;">2023年8月 · 美国加州戈利塔</p>
+        <!--
+        <iframe src='&autoplay=0&danmaku=0' allowfullscreen='allowfullscreen' width='100%' height='500' scrolling='no' frameborder="0" sandbox='allow-top-navigation allow-same-origin allow-forms allow-scripts'></iframe>
+        -->
         <p>
             语言：布农语-郡群<br>
             布农童谣<br>
@@ -44,79 +48,101 @@
             [3] Lin, Hui-shan. CV reduplication in Isbukun Bunun: Variable RED Placements [J]. Language and Linguistics, 2018, 19(2): 231-265.<br>
             [4] 一块饼三毛钱. 用小学课本学高山族语！【布农族语小教室】第0课——字母发音（竖屏版） [EB/OL]. [2023-09-06]. https://www.bilibili.com/video/BV1Vw411U7zW
         </p>
+        <br>
+        <div class="button-container">
+            <button id="toggle-ipa">音标</button>
+            <button id="toggle-translation">翻译</button>
+        </div>
+        <div id="lyrics-container">
+            <div class="lyric-block">
+                <p class="lyric-line">Sima iskadaiza</p>
+                <p class="lyric-ipa hidden">ɕima iɕkadajða</p>
+                <p class="lyric-translation hidden">谁从远方来相见</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Aza-aza minmamata</p>
+                <p class="lyric-ipa hidden">aðaʔaða minmamata</p>
+                <p class="lyric-translation hidden">一群残障小伙伴</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Katu tupa naula-an</p>
+                <p class="lyric-ipa hidden">katu tupa nawlaan</p>
+                <p class="lyric-translation hidden">取笑他们恶报缠</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Tupa tamacina tu</p>
+                <p class="lyric-ipa hidden">tupa tamat͡ɕina tu</p>
+                <p class="lyric-translation hidden">父母教诲记心间</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Masiala malkabunun</p>
+                <p class="lyric-ipa hidden">maɕjala malkabunun</p>
+                <p class="lyric-translation hidden">爱人如己心常安</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Nasauhabas malinaskal</p>
+                <p class="lyric-ipa hidden">nasawχabas malinaskal</p>
+                <p class="lyric-translation hidden">幸福快乐永相伴</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Sima iskadaiza</p>
+                <p class="lyric-ipa hidden">ɕima iɕkadajða</p>
+                <p class="lyric-translation hidden">谁从远方来相见</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Aza-aza minmamata</p>
+                <p class="lyric-ipa hidden">aðaʔaða minmamata</p>
+                <p class="lyric-translation hidden">一群残障小伙伴</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Katu tupa naula-an</p>
+                <p class="lyric-ipa hidden">katu tupa nawlaan</p>
+                <p class="lyric-translation hidden">取笑他们恶报缠</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Tupa tamacina tu</p>
+                <p class="lyric-ipa hidden">tupa tamat͡ɕina tu</p>
+                <p class="lyric-translation hidden">父母教诲记心间</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Masiala malkabunun</p>
+                <p class="lyric-ipa hidden">maɕjala malkabunun</p>
+                <p class="lyric-translation hidden">爱人如己心常安</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Nasauhabas malinaskal</p>
+                <p class="lyric-ipa hidden">nasawχabas malinaskal</p>
+                <p class="lyric-translation hidden">幸福快乐永相伴</p>
+            </div>
+        </div>
+        <br>
+        <div class="pdf-container">
+            <embed src="../file/arrj.pdf" type="application/pdf" width="100%" height="800px">
+        </div>
+        <div class="mobile-pdf">
+            <a href="../file/arrj.pdf" target="_blank">歌谱：爱人如己</a>
+        </div>
     </article>
-    <!--
-    <iframe src='&autoplay=0&danmaku=0' allowfullscreen='allowfullscreen' width='100%' height='500' scrolling='no' frameborder="0" sandbox='allow-top-navigation allow-same-origin allow-forms allow-scripts'></iframe>
-    -->
-    <table>
-        <tr>
-            <td>
-                <p>
-                    <b style='font-size: 20px;'>歌词：</b><br>
-                    <p>Sima iskadaiza<br>
-                    Aza-aza minmamata<br>
-                    Katu tupa naula-an<br>
-                    Tupa tamacina tu<br>
-                    Masiala malkabunun<br>
-                    Nasauhabas malinaskal<br>
-                    Sima iskadaiza<br>
-                    Aza-aza minmamata<br>
-                    Katu tupa naula-an<br>
-                    Tupa tamacina tu<br>
-                    Masiala malkabunun<br>
-                    Nasauhabas malinaskal</p>
-                </p>
-            </td>
-            <td>
-                <p>
-                    <b style='font-size: 20px;'>翻译：</b><br>
-                    <p>谁从远方来相见<br>
-                    一群残障小伙伴<br>
-                    取笑他们恶报缠<br>
-                    父母教诲记心间<br>
-                    爱人如己心常安<br>
-                    幸福快乐永相伴<br>
-                    谁从远方来相见<br>
-                    一群残障小伙伴<br>
-                    取笑他们恶报缠<br>
-                    父母教诲记心间<br>
-                    爱人如己心常安<br>
-                    幸福快乐永相伴</p>
-                </p>
-            </td>
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <td>
-                <p>
-                    <b style='font-size: 20px;'>国际音标：</b><br>
-                    <p style='font-family: "Times New Roman", Times, serif;'>
-                        ɕima iɕkadajða<br>
-                        aða aða minmamata<br>
-                        katu tupa nawla an<br>
-                        tupa tamat͡ɕina tu<br>
-                        maɕjala malkabunun<br>
-                        nasawχabas malinaskal<br>
-                        ɕima iɕkadajða<br>
-                        aða aða minmamata<br>
-                        katu tupa nawla an<br>
-                        tupa tamat͡ɕina tu<br>
-                        maɕjala malkabunun<br>
-                        nasawχabas malinaskal
-                    </p>
-                </p>
-            </td>
-            <td>
-                <p>
-                    <br>
-                </p>
-            </td>
-        </tr>
-    </table>
-    <article>
-        <embed src='../file/arrj.pdf' type='application/pdf' width='100%' height=800px/>
-    </article>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('toggle-ipa').addEventListener('click', function() {
+                var ipaSymbols = document.querySelectorAll('.lyric-ipa');
+                ipaSymbols.forEach(function(ipa) {
+                    ipa.classList.toggle('show');
+                });
+            });
+            document.getElementById('toggle-translation').addEventListener('click', function() {
+                var translations = document.querySelectorAll('.lyric-translation');
+                translations.forEach(function(translation) {
+                    translation.classList.toggle('show');
+                });
+            });
+        });
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            const navList = document.querySelector('.nav-list');
+            navList.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>

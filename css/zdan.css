@@ -17,6 +17,7 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     width: 100%;
     overflow: visible;
 }
@@ -147,7 +148,8 @@ button:hover {
 
 @media (max-width: 768px) {
     html, body {
-        background-position: center center;
+        background-image: url("");
+        background-attachment: fixed;
     }
 
     .hamburger {

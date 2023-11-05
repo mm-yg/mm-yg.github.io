@@ -1,10 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Noto Serif SC", serif;
+    font-family: "Times New Roman", Times, "Noto Serif SC", serif;
     font-size: 20px;
     color: #ffffff;
-    text-shadow: 0 0 0.2em #4d4d4d;
+    text-shadow:
+    0 0 0.2em #4d4d4d,
+    -.5px -.5px 0 #000000,
+    .5px -.5px 0 #000000,
+    -.5px .5px 0 #000000,
+    .5px .5px 0 #000000;
 }
 
 html, body {
@@ -140,9 +145,8 @@ button:hover {
     background: transparent;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     html, body {
-        background-attachment: scroll;
     }
 
     .hamburger {

@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Noto Serif SC", serif;
+    font-family: "Times New Roman", Times, "Noto Serif SC", serif;
     font-size: 20px;
     color: #ffffff;
     text-shadow:
@@ -61,6 +61,8 @@ nav {
 }
 
 article {
+    position: relative;
+    z-index: 1;
     max-width: 900px;
     width: 90%;
     margin: 12px auto;
@@ -115,7 +117,6 @@ button:hover {
 }
 
 .lyric-ipa {
-    font-family: "Times New Roman", Times, serif;
     color: #f5ff62;
 }
 
@@ -147,9 +148,22 @@ button:hover {
     box-shadow: none;
 }
 
-@media (max-width: 768px) {
-    html, body {
-        background-attachment: scroll;
+.mobile-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-background {
+        display: block;
     }
 
     .hamburger {

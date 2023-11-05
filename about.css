@@ -73,6 +73,7 @@ p {
     margin: 14px auto;
     text-align: justify;
     line-height: 2;
+    word-break: break-all;
 }
 
 .hamburger {
@@ -84,7 +85,7 @@ p {
 
 @media (max-width: 768px) {
     html, body {
-        background-attachment: fixed;
+        background-attachment: scroll;
     }
 
     .hamburger {

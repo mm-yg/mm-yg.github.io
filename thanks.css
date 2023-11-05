@@ -90,7 +90,7 @@ p {
 
 @media (max-width: 768px) {
     html, body {
-        background-attachment: fixed;
+        background-attachment: scroll;
     }
 
     .hamburger {

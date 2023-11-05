@@ -155,15 +155,21 @@ button:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 0;
 }
 
 @media screen and (max-width: 768px) {
+    html, body {
+        background-attachment: scroll;
+    }
+
     .mobile-background {
         display: block;
+        background-image: url("../img/zdan.jpg");
+        z-index: 0;
     }
 
     .hamburger {

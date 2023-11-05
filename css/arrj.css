@@ -155,9 +155,33 @@ button:hover {
     display: none;
 }
 
-@media (max-width: 768px) {
+.bg-text, nav {
+    z-index: 10;
+    position: relative;
+}
+
+.mobile-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+@media screen and (max-width: 768px) {
     html, body {
         background-attachment: scroll;
+    }
+
+    .mobile-background {
+        display: block;
+        background-image: url("../img/arrj.jpg");
+        z-index: -1;
     }
 
     .hamburger {
@@ -181,15 +205,5 @@ button:hover {
 
     .nav-list.active {
         display: flex;
-    }
-
-    .pdf-container {
-        display: none;
-    }
-
-    .mobile-pdf {
-        display: block;
-        text-align: center;
-        padding: 20px;
     }
 }

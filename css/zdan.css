@@ -148,6 +148,11 @@ button:hover {
     box-shadow: none;
 }
 
+.bg-text, nav {
+    z-index: 10;
+    position: relative;
+}
+
 .mobile-background {
     display: none;
     position: fixed;
@@ -158,7 +163,7 @@ button:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 0;
 }
 
 @media screen and (max-width: 768px) {

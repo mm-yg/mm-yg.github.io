@@ -18,9 +18,6 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: visible;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-attachment: fixed;
 }
 
@@ -151,10 +148,6 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
-    html, body {
-        background-attachment: fixed;
-    }
-
     .hamburger {
         display: block;
     }

@@ -14,12 +14,12 @@
 
 html, body {
     background-image: url("../img/arrj.jpg");
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
     width: 100%;
     overflow: visible;
+    background-attachment: fixed;
 }
 
 ::-webkit-scrollbar {
@@ -174,16 +174,6 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
-    html, body {
-        background-attachment: scroll;
-    }
-
-    .mobile-background {
-        display: block;
-        background-image: url("../img/arrj.jpg");
-        z-index: -1;
-    }
-
     .hamburger {
         display: block;
     }

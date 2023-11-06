@@ -1,15 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Times New Roman", Times, "Noto Serif SC", serif;
+    font-family: "Noto Serif SC", serif;
     font-size: 20px;
     color: #ffffff;
-    text-shadow:
-    0 0 0.2em #4d4d4d,
-    -.5px -.5px 0 #000000,
-    .5px -.5px 0 #000000,
-    -.5px .5px 0 #000000,
-    .5px .5px 0 #000000;
 }
 
 html, body {
@@ -17,9 +11,25 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     overflow: visible;
-    background-attachment: fixed;
+}
+
+html, body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #00000030;
+    z-index: 1;
+}
+
+html, body * {
+position: relative;
+z-index: 2;
 }
 
 ::-webkit-scrollbar {
@@ -75,11 +85,10 @@ h1 {
 }
 
 p {
+    text-align: justify;
     line-height: 1.7;
     margin: 14px auto;
-    text-align: left;
     font-size: 19px;
-    word-break: break-all;
 }
 
 .button-container {
@@ -96,14 +105,12 @@ button {
     border-radius: 19px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 2px 4px #4d4d4d;
 }
 
 button:hover {
     color: #000000;
     background-color: #ffffff;
-    text-shadow: none;
-    box-shadow: 0 2.5px 5px #4d4d4d;
+    box-shadow: 0 2px 4px #4d4d4d;
 }
 
 .lyric-line,
@@ -117,11 +124,12 @@ button:hover {
 }
 
 .lyric-ipa {
-    color: #f5ff62;
+    font-family: "Times New Roman", Times, sans-serif;
+    color: #61fcff;
 }
 
 .lyric-translation {
-    color: #77edff;
+    color: #fffc30;
 }
 
 .lyric-ipa.show,
@@ -143,12 +151,31 @@ button:hover {
 
 .hamburger:hover {
     background: transparent;
-    text-shadow:
-    0 0 0.2em #4d4d4d;
     box-shadow: none;
 }
 
 @media screen and (max-width: 768px) {
+    html, body {
+        background-image: none;
+        background: linear-gradient(225deg, #ffa5db, #7fd870);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    html, body::before {
+        background: none;
+    }
+
+    .bg-text {
+        display: none;
+    }
+
+    p {
+        text-align: left;
+    }
+
     .hamburger {
         display: block;
     }

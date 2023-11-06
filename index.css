@@ -1,25 +1,35 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Times New Roman", Times, "Noto Serif SC", serif;
+    font-family: "Noto Serif SC", serif;
     font-size: 20px;
     color: #ffffff;
-    text-shadow:
-    0 0 0.2em #4d4d4d,
-    -.5px -.5px 0 #000000,
-    .5px -.5px 0 #000000,
-    -.5px .5px 0 #000000,
-    .5px .5px 0 #000000;
 }
 
 html, body {
     background-image: url("img/100530.jpg");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    overflow: visible;
     background-attachment: fixed;
+    height: 100%;
+    overflow: visible;
+}
+
+html, body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #00000030;
+    z-index: 1;
+}
+
+html, body * {
+position: relative;
+z-index: 2;
 }
 
 ::-webkit-scrollbar {
@@ -94,6 +104,10 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+    html, body::before {
+        background: none;
+    }
+
     .hamburger {
         display: block;
     }

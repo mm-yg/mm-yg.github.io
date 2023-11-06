@@ -4,6 +4,9 @@
     font-family: "Noto Serif SC", serif;
     font-size: 20px;
     color: #ffffff;
+    text-shadow:
+    0.5px 0.5px #000000,
+    -0.5px -0.5px #ffffff;
 }
 
 html, body {
@@ -23,7 +26,6 @@ html, body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #00000030;
     z-index: 1;
 }
 

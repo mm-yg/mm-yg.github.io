@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bgn.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
+    <title>布谷鸟</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="../music.html">歌声 🔍</a></li>
+            <li><a href="../index.html">56+ ❤️</a></li>
+            <li><a href="../about.html">缘起 💡</a></li>
+            <li><a href="../thanks.html">致谢 🌸</a></li>
+            <li><a href="https://space.bilibili.com/429836216">b站 🍻</a></li>
+        </ul>
+        <button class="hamburger">👀</button>
+    </nav>
+    <div class="bg-text">
+        2023年6月2日<br>
+        上海杨浦<br>
+        丁丁 摄
+    </div>
+    <article>
+        <h1>布谷鸟</h1>
+        <p style="text-align: center;">2023年9月 · 美国怀俄明州黄石国家公园</p>
+        <!--
+        <iframe src='&autoplay=0&danmaku=0' allowfullscreen='allowfullscreen' width='100%' height='500' scrolling='no' frameborder="0" sandbox='allow-top-navigation allow-same-origin allow-forms allow-scripts'></iframe>
+        -->
+        <p>
+            语言：俄语<br>
+            词曲：Виктор Цой<br>
+            原唱：Кино<br>
+            版本：Полина Гагарина｜歌手2019第四期<br>
+            编曲：Константин Меладзе（meladze.k）<br>
+            翻译整理/翻唱/手语：鹿鸣<br>
+            录像：弦索<br>
+            致谢：雀鹰&妈妈，阿雪&胡思猫<br>
+            参考：<br>
+            [1] 冬天的雨. 《кукушка》中文歌词翻译《布谷鸟》 [EB/OL]. [2017-06-20]. https://www.douban.com/note/625591082/?_i=83031590kPiONa<br>
+            [2] 芒果TV音乐 MangoTV Music. 【纯享版】波琳娜 Polina Gagarina《布谷鸟 Кукушка》《歌手2019》第4期 Singer 2019 EP4 花絮live [EB/OL]. [2019-02-07]. https://www.youtube.com/watch?v=T1Co32bmmRw<br>
+            [3] Russkaja_pesnia. [听歌学俄语]Кукушка 布谷鸟 Polina Gagarina [EB/OL]. [2022-04-30]. https://www.bilibili.com/video/BV163411K7SZ<br>
+            在线查询：<br>
+            [1] <a href="https://easypronunciation.com/en/russian-phonetic-transcription-converter">EasyPronunciation</a><br>
+            [2] <a href="https://www.wiktionary.org">维基词典</a>
+        </p>
+        <br>
+        <div class="button-container">
+            <button id="toggle-ipa">音标</button>
+            <button id="toggle-translation">翻译</button>
+        </div>
+        <div id="lyrics-container">
+            <div class="lyric-block">
+                <p class="lyric-line">Песен ещё не написанных сколько</p>
+                <p class="lyric-ipa hidden">pʲesʲɪn jɪɕːɵ nʲe nɐpʲisənːɨx skolʲkə</p>
+                <p class="lyric-translation hidden">还有多少未写完的歌</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Скажи кукушка</p>
+                <p class="lyric-ipa hidden">skɐʐɨ kʊkuʂkə</p>
+                <p class="lyric-translation hidden">布谷鸟啊请你告诉我</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Пропой</p>
+                <p class="lyric-ipa hidden">prɐpoj</p>
+                <p class="lyric-translation hidden">请唱</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">В городе мне жить или на выселках</p>
+                <p class="lyric-ipa hidden">v ɡorədʲɪ mnʲe ʐɨtʲ ilʲɪ nə vɨsʲɪɫkəx</p>
+                <p class="lyric-translation hidden">我流连辗转城市山乡</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Камнем лежать или гореть звездой</p>
+                <p class="lyric-ipa hidden">kamnʲɪm lʲɪʐatʲ ilʲɪ ɡɐrʲetʲ zvʲɪzdoj</p>
+                <p class="lyric-translation hidden">如顽石或如明星闪烁</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Звездой</p>
+                <p class="lyric-ipa hidden">zvʲɪzdoj</p>
+                <p class="lyric-translation hidden">闪烁</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Солнце моё взгляни на меня</p>
+                <p class="lyric-ipa hidden">sont͡sə mɐjɵ vzɡlʲɪnʲi nə mʲɪnʲa</p>
+                <p class="lyric-translation hidden">我的太阳请垂青于我</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Моя ладонь превратилась в кулак</p>
+                <p class="lyric-ipa hidden">mɐja ɫɐdonʲ prʲɪvrɐtʲiɫəsʲ f kʊɫak</p>
+                <p class="lyric-translation hidden">我的双手已缓缓紧握</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">И если есть порох дай огня</p>
+                <p class="lyric-ipa hidden">i jeslʲɪ jesʲtʲ porəx daj ɐɡnʲa</p>
+                <p class="lyric-translation hidden">若有火焰便迎向火光</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Вот так</p>
+                <p class="lyric-ipa hidden">vot tak</p>
+                <p class="lyric-translation hidden">就是这样</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Кто пойдёт по следу одинокому</p>
+                <p class="lyric-ipa hidden">kto pɐjdʲɵt pɐ sʲlʲedʊ ɐdʲɪnokəmʊ</p>
+                <p class="lyric-translation hidden">谁踏孤独的足迹前行</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Сильные да смелые головы сложили в поле</p>
+                <p class="lyric-ipa hidden">sʲilʲnɨje da smʲeɫɨje ɡoɫəvɨ sɫɐʐɨlʲɪ v polʲe</p>
+                <p class="lyric-translation hidden">英勇的人牺牲于战场</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">В бою</p>
+                <p class="lyric-ipa hidden">v bɐju</p>
+                <p class="lyric-translation hidden">于战争</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Мало кто остался в светлой памяти</p>
+                <p class="lyric-ipa hidden">maɫə kto ɐstaɫsʲə f svʲetɫəj pamʲɪtʲɪ</p>
+                <p class="lyric-translation hidden">少有人能于青史留名</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">В трезвом уме да с твёрдой рукой в строю</p>
+                <p class="lyric-ipa hidden">f trʲezvəm ʊmʲe da s tvʲɵrdəj rʊkoj f strɐju</p>
+                <p class="lyric-translation hidden">我头脑清醒整装待发</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">В строю</p>
+                <p class="lyric-ipa hidden">f strɐju</p>
+                <p class="lyric-translation hidden">整装待发</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Солнце моё взгляни на меня</p>
+                <p class="lyric-ipa hidden">sont͡sə mɐjɵ vzɡlʲɪnʲi nə mʲɪnʲa</p>
+                <p class="lyric-translation hidden">我的太阳请垂青于我</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Моя ладонь превратилась в кулак</p>
+                <p class="lyric-ipa hidden">mɐja ɫɐdonʲ prʲɪvrɐtʲiɫəsʲ f kʊɫak</p>
+                <p class="lyric-translation hidden">我的双手已缓缓紧握</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">И если есть порох дай огня</p>
+                <p class="lyric-ipa hidden">i jeslʲɪ jesʲtʲ porəx daj ɐɡnʲa</p>
+                <p class="lyric-translation hidden">若有火焰便迎向火光</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Вот так</p>
+                <p class="lyric-ipa hidden">vot tak</p>
+                <p class="lyric-translation hidden">就是这样</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Где же ты теперь воля вольная</p>
+                <p class="lyric-ipa hidden">ɡdʲe ʐɨ tɨ tʲɪpʲerʲ volʲə volʲnəjə</p>
+                <p class="lyric-translation hidden">自由意志你如今在哪</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">С кем же ты сейчас ласковый рассвет встречаешь</p>
+                <p class="lyric-ipa hidden">s kʲem ʐɨ tɨ sʲɪt͡ɕas ɫaskəvɨj rɐssvʲet fstrʲɪt͡ɕæjɪʂ</p>
+                <p class="lyric-translation hidden">温柔黎明你迎候谁家</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Ответь</p>
+                <p class="lyric-ipa hidden">ɐtvʲetʲ</p>
+                <p class="lyric-translation hidden">请回答</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Хорошо с тобой ла плохо без тебя</p>
+                <p class="lyric-ipa hidden">xərɐʂo s tɐboj la pɫoxə bʲɪs tʲɪbʲa</p>
+                <p class="lyric-translation hidden">有你同乐而失你独痛</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Голову на плечи терпеливые под плеть</p>
+                <p class="lyric-ipa hidden">ɡoɫəvʊ nə plʲet͡ɕɪ tʲɪrpʲɪlʲivɨjе pɐt plʲetʲ</p>
+                <p class="lyric-translation hidden">鞭扫肩头我依然坚忍</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Под плеть</p>
+                <p class="lyric-ipa hidden">pɐt plʲetʲ</p>
+                <p class="lyric-translation hidden">坚忍</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Солнце моё взгляни на меня</p>
+                <p class="lyric-ipa hidden">sont͡sə mɐjɵ vzɡlʲɪnʲi nə mʲɪnʲa</p>
+                <p class="lyric-translation hidden">我的太阳请垂青于我</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Моя ладонь превратилась в кулак</p>
+                <p class="lyric-ipa hidden">mɐja ɫɐdonʲ prʲɪvrɐtʲiɫəsʲ f kʊɫak</p>
+                <p class="lyric-translation hidden">我的双手已缓缓紧握</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">И если есть порох дай огня</p>
+                <p class="lyric-ipa hidden">i jeslʲɪ jesʲtʲ porəx daj ɐɡnʲa</p>
+                <p class="lyric-translation hidden">若有火焰便迎向火光</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Вот так</p>
+                <p class="lyric-ipa hidden">vot tak</p>
+                <p class="lyric-translation hidden">就是这样</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Солнце моё взгляни на меня</p>
+                <p class="lyric-ipa hidden">sont͡sə mɐjɵ vzɡlʲɪnʲi nə mʲɪnʲa</p>
+                <p class="lyric-translation hidden">我的太阳请垂青于我</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Моя ладонь превратилась в кулак</p>
+                <p class="lyric-ipa hidden">mɐja ɫɐdonʲ prʲɪvrɐtʲiɫəsʲ f kʊɫak</p>
+                <p class="lyric-translation hidden">我的双手已缓缓紧握</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">И если есть порох дай огня</p>
+                <p class="lyric-ipa hidden">i jeslʲɪ jesʲtʲ porəx daj ɐɡnʲa</p>
+                <p class="lyric-translation hidden">若有火焰便迎向火光</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">Вот так</p>
+                <p class="lyric-ipa hidden">vot tak</p>
+                <p class="lyric-translation hidden">就是这样</p>
+            </div>
+        </div>
+    </article>
+    <br>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('toggle-ipa').addEventListener('click', function() {
+                var ipaSymbols = document.querySelectorAll('.lyric-ipa');
+                ipaSymbols.forEach(function(ipa) {
+                    ipa.classList.toggle('show');
+                });
+            });
+            document.getElementById('toggle-translation').addEventListener('click', function() {
+                var translations = document.querySelectorAll('.lyric-translation');
+                translations.forEach(function(translation) {
+                    translation.classList.toggle('show');
+                });
+            });
+        });
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            const navList = document.querySelector('.nav-list');
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

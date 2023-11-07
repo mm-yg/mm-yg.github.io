@@ -4,9 +4,7 @@
     font-family: "Noto Serif SC", serif;
     font-size: 20px;
     color: #ffffff;
-    text-shadow:
-    0.5px 0.5px #000000,
-    -0.5px -0.5px #ffffff;
+    text-shadow: 0 0 10px #3f3f3f;
 }
 
 html, body {
@@ -17,22 +15,6 @@ html, body {
     background-attachment: fixed;
     width: 100%;
     overflow: visible;
-}
-
-html, body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #00000020;
-    z-index: 1;
-}
-
-html, body * {
-position: relative;
-z-index: 2;
 }
 
 ::-webkit-scrollbar {
@@ -115,6 +97,7 @@ button:hover {
     color: #000000;
     background-color: #ffffff;
     box-shadow: 0 2px 4px #4d4d4d;
+    text-shadow: none;
 }
 
 .lyric-line,
@@ -174,10 +157,6 @@ button:hover {
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
-    }
-
-    html, body::before {
-        background: none;
     }
 
     .bg-text {

@@ -61,6 +61,8 @@ article {
     max-width: 900px;
     width: 75%;
     margin: 12px auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 h1 {
@@ -143,7 +145,7 @@ button:hover {
 @media screen and (max-width: 768px) {
     html, body {
         background-image: none;
-        background: linear-gradient(225deg, #ffa5db, #7fd870);
+        background: radial-gradient(circle, #b48e6c, #a0a0a0);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;

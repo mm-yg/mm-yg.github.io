@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Noto Serif SC", serif;
+    font-family: "Noto Serif", "Noto Serif SC", serif;
     font-size: 20px;
     color: #ffffff;
     text-shadow: 0 0 10px #3f3f3f;
@@ -23,10 +23,10 @@ html, body {
 
 .bg-text {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 13px;
+    left: 15px;
     text-align: left;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 nav {
@@ -66,7 +66,7 @@ article {
 h1 {
     line-height: 2;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 p {

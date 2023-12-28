@@ -8,7 +8,7 @@
 }
 
 html, body {
-    background-image: url("img/180727.jpg");
+    background-image: url("img/music.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -141,6 +141,19 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
+    html, body {
+        background-image: none;
+        background: linear-gradient(200deg, #eeeeee, #acd9ff);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .bg-text {
+        display: none;
+    }
+
     .hamburger {
         display: block;
     }

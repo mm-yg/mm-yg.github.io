@@ -8,7 +8,7 @@
 }
 
 html, body {
-    background-image: url("img/100530.jpg");
+    background-image: url("img/index.jpg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,6 +89,19 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+    html, body {
+        background-image: none;
+        background: linear-gradient(10deg, #feb1b1, #ffd096, #fff386, #9af298, #98e4f2, #dbbcf5);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .bg-text {
+        display: none;
+    }
+
     .hamburger {
         display: block;
     }

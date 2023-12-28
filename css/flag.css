@@ -8,8 +8,8 @@
 }
 
 html, body {
-    background-image: url("../img/bgn.jpg");
-    background-position: top;
+    background-image: url("../img/flag.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -58,7 +58,7 @@ nav {
 article {
     position: relative;
     z-index: 1;
-    max-width: 900px;
+    max-width: 900px auto;
     width: 75%;
     margin: 12px auto;
     word-wrap: break-word;
@@ -96,13 +96,13 @@ button {
 button:hover {
     color: #000000;
     background-color: #ffffff;
-    box-shadow: 0 2px 4px #4d4d4d;
     text-shadow: none;
 }
 
 .lyric-line,
 .lyric-ipa,
-.lyric-translation {
+.lyric-translation,
+.lyric-pin {
     text-align: center;
 }
 
@@ -110,17 +110,29 @@ button:hover {
     display: none;
 }
 
-.lyric-ipa {
+@font-face {
+    font-family: "Noto Sans Yi";
+    src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+Yi&display=swap");
+}
+
+.lyric-line {
+    font-family: "Noto Sans Yi", sans-serif;
+}
+
+.lyric-ipa,
+.lyric-pin {
     font-family: "Times New Roman", Times, sans-serif;
     color: #fffc30;
 }
 
-.lyric-translation {
+.lyric-translation,
+.lyric-pin {
     font-style: italic;
 }
 
 .lyric-ipa.show,
-.lyric-translation.show {
+.lyric-translation.show,
+.lyric-pin.show {
     display: block;
 }
 
@@ -141,10 +153,18 @@ button:hover {
     box-shadow: none;
 }
 
+.pdf-container {
+    display: block;
+}
+
+.mobile-pdf {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     html, body {
         background-image: none;
-        background: radial-gradient(circle, #b48e6c, #a0a0a0);
+        background: linear-gradient(#a9a9a9, #174cea);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -176,5 +196,14 @@ button:hover {
 
     .nav-list.active {
         display: flex;
+    }
+
+    .pdf-container {
+        display: none;
+    }
+
+    .mobile-pdf {
+        display: block;
+        text-align: center;
     }
 }

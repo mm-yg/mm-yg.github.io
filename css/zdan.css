@@ -58,7 +58,7 @@ nav {
 article {
     position: relative;
     z-index: 1;
-    max-width: 900px;
+    max-width: 900px auto;
     width: 75%;
     margin: 12px auto;
     word-wrap: break-word;
@@ -96,13 +96,13 @@ button {
 button:hover {
     color: #000000;
     background-color: #ffffff;
-    box-shadow: 0 2px 4px #4d4d4d;
     text-shadow: none;
 }
 
 .lyric-line,
 .lyric-ipa,
-.lyric-translation {
+.lyric-translation,
+.lyric-pin {
     text-align: center;
 }
 
@@ -110,17 +110,20 @@ button:hover {
     display: none;
 }
 
-.lyric-ipa {
+.lyric-ipa,
+.lyric-pin {
     font-family: "Times New Roman", Times, sans-serif;
     color: #fffc30;
 }
 
-.lyric-translation {
+.lyric-translation,
+.lyric-pin {
     font-style: italic;
 }
 
 .lyric-ipa.show,
-.lyric-translation.show {
+.lyric-translation.show,
+.lyric-pin.show {
     display: block;
 }
 
@@ -144,7 +147,7 @@ button:hover {
 @media screen and (max-width: 768px) {
     html, body {
         background-image: none;
-        background: linear-gradient(225deg, #ffa5db, #7fd870);
+        background: linear-gradient(225deg, #fbb7e0, #a0f493);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;

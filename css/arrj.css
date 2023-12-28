@@ -58,7 +58,7 @@ nav {
 article {
     position: relative;
     z-index: 1;
-    max-width: 900px;
+    max-width: 900px auto;
     width: 75%;
     margin: 12px auto;
     word-wrap: break-word;
@@ -96,7 +96,6 @@ button {
 button:hover {
     color: #000000;
     background-color: #ffffff;
-    box-shadow: 0 2px 4px #4d4d4d;
     text-shadow: none;
 }
 
@@ -152,7 +151,7 @@ button:hover {
 @media screen and (max-width: 768px) {
     html, body {
         background-image: none;
-        background: linear-gradient(-190deg, #4ecdff, #ff8181);
+        background: linear-gradient(-190deg, #3bc8ff, #78e357);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;

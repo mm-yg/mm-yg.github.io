@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/yg.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
+    <title>鱼歌</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="../index.html">56+ ❤️</a></li>
+            <li><a href="../about.html">缘起 💡</a></li>
+            <li><a href="../thanks.html">致谢 🌸</a></li>
+            <li><a href="../music.html">歌声 🔍</a></li>
+            <li><a href="https://space.bilibili.com/429836216">b站 🍻</a></li>
+        </ul>
+        <button class="hamburger">👀</button>
+    </nav>
+    <div class="bg-text">
+        2020年9月<br>
+        福建厦门湖里<br>
+        James 摄
+    </div>
+    <article>
+        <h1>鱼歌</h1>
+        <p style="text-align: center;">2023年12月 · 美国加州戈利塔</p>
+        <!--
+        <iframe src='&autoplay=0&danmaku=0' allowfullscreen='allowfullscreen' width='100%' height='500' scrolling='no' frameborder="0" sandbox='allow-top-navigation allow-same-origin allow-forms allow-scripts'></iframe>
+        -->
+        <p>
+            语言：中国手语，汉语-闽-闽南-泉漳片-厦门市区<br>
+            作词：黄滢滢，林达<br>
+            作曲：苗子，林达<br>
+            原唱：黄滢滢<br>
+            版本：厦门六中合唱团<br>
+            编曲：徐聪，丁丁，黄馨飞<br>
+            录像：Snow<br>
+            手语/翻唱：鹿鸣<br>
+            参考：<br>
+            [1] Chen, W.b. 台語歌真正正字歌詞網 | 《魚歌》Hî-kua [EB/OL]. [2018-05-22]. https://www.facebook.com/groups/922800454445724/permalink/1800819223310505<br>
+            [2] 厦门市地方志编纂委员会办公室. 厦门方言志 [M]. 北京: 北京语言学院出版社, 1996.<br>
+            [3] 周长楫. 厦门方言词典 [M]. 南京: 江苏教育出版社, 1993.
+        </p>
+        <br>
+        <div class="button-container">
+            <button id="toggle-ipa">音标</button>
+            <button id="toggle-translation">翻译</button>
+            <button id="toggle-pin">台罗</button>
+        </div>
+        <div id="lyrics-container">
+            <div class="lyric-block">
+                <p class="lyric-line">会记着</p>
+                <p class="lyric-ipa hidden">e ki tioʔ</p>
+                <p class="lyric-translation hidden">曾记得</p>
+                <p class="lyric-pin hidden">ē-kì-tio̍h</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">囡仔时</p>
+                <p class="lyric-ipa hidden">kin a ɕi</p>
+                <p class="lyric-translation hidden">小时候</p>
+                <p class="lyric-pin hidden">kín-á-sî</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">妈妈定定</p>
+                <p class="lyric-ipa hidden">mã mã tiã tiã</p>
+                <p class="lyric-translation hidden">妈妈常常</p>
+                <p class="lyric-pin hidden">má-mah tiānn-tiānn</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">𤆬我去菜市</p>
+                <p class="lyric-ipa hidden">t͡sʰua gua kʰi t͡sʰai t͡ɕʰi</p>
+                <p class="lyric-translation hidden">带我去菜市</p>
+                <p class="lyric-pin hidden">tshuā guá khì tshài-tshī</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">买着我爱食的鱼</p>
+                <p class="lyric-ipa hidden">bue tioʔ gua ai t͡ɕiaʔ e hi</p>
+                <p class="lyric-translation hidden">买着我爱吃的鱼</p>
+                <p class="lyric-pin hidden">bué tio̍h guá ài tsia̍h ê hî</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">上爱教我唱这首歌诗</p>
+                <p class="lyric-ipa hidden">ɕiɔŋ ai ka gua t͡ɕʰiũ t͡ɕit̚ ɕiu kua ɕi</p>
+                <p class="lyric-translation hidden">最爱教我唱这首歌谣</p>
+                <p class="lyric-pin hidden">siōng ài kà guá tshiùnn tsit siú kua-si</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">会记着</p>
+                <p class="lyric-ipa hidden">e ki tioʔ</p>
+                <p class="lyric-translation hidden">曾记得</p>
+                <p class="lyric-pin hidden">ē-kì-tio̍h</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">囡仔时</p>
+                <p class="lyric-ipa hidden">kin a ɕi</p>
+                <p class="lyric-translation hidden">小时候</p>
+                <p class="lyric-pin hidden">kín-á-sî</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">爸爸常常</p>
+                <p class="lyric-ipa hidden">pa pa ɕiɔŋ ɕiɔŋ</p>
+                <p class="lyric-translation hidden">爸爸常常</p>
+                <p class="lyric-pin hidden">pá-pah siông-siông</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">𤆬我去海边</p>
+                <p class="lyric-ipa hidden">t͡sʰua gua kʰi hai pĩ</p>
+                <p class="lyric-translation hidden">带我去海边</p>
+                <p class="lyric-pin hidden">tshuā guá khì hái-pinn</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">看船吹风淋雨出帆去</p>
+                <p class="lyric-ipa hidden">kʰuã t͡sun t͡sʰe hɔŋ lam hɔ t͡sʰut̚ pʰaŋ kʰi</p>
+                <p class="lyric-translation hidden">看船吹风淋雨出航去</p>
+                <p class="lyric-pin hidden">khuànn tsûn tshe-hong lâm-hōo tshut-phâng--khì</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">听螺声响起啊念歌诗</p>
+                <p class="lyric-ipa hidden">tʰiã le ɕiã hiɔŋ kʰi a liam kua ɕi</p>
+                <p class="lyric-translation hidden">听螺声响起啊唱歌谣</p>
+                <p class="lyric-pin hidden">thiann lê-siann hióng khí--ah liām kua-si</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">天有偌大</p>
+                <p class="lyric-ipa hidden">tʰĩ u lua tua</p>
+                <p class="lyric-translation hidden">天有多大</p>
+                <p class="lyric-pin hidden">thinn ū luā tuā</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">海有偌阔</p>
+                <p class="lyric-ipa hidden">hai u lua kʰuaʔ</p>
+                <p class="lyric-translation hidden">海有多阔</p>
+                <p class="lyric-pin hidden">hái ū luā khuah</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">讨海的人赶流落水</p>
+                <p class="lyric-ipa hidden">tʰo hai e laŋ kuã lau loʔ t͡sui</p>
+                <p class="lyric-translation hidden">打鱼的人赶潮下水</p>
+                <p class="lyric-pin hidden">thó-hái ê lâng kuánn lâu lo̍h tsuí</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">希望有鱼来入网</p>
+                <p class="lyric-ipa hidden">hi baŋ u hi lai lip̚ baŋ</p>
+                <p class="lyric-translation hidden">希望有鱼来入网</p>
+                <p class="lyric-pin hidden">hi-bāng ū hî lâi li̍p bāng</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">天有偌大</p>
+                <p class="lyric-ipa hidden">tʰĩ u lua tua</p>
+                <p class="lyric-translation hidden">天有多大</p>
+                <p class="lyric-pin hidden">thinn ū luā tuā</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">海有偌阔</p>
+                <p class="lyric-ipa hidden">hai u lua kʰuaʔ</p>
+                <p class="lyric-translation hidden">海有多阔</p>
+                <p class="lyric-pin hidden">hái ū luā khuah</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">保庇大船顺风楔入港</p>
+                <p class="lyric-ipa hidden">po pi tua t͡sun sun hɔŋ sueʔ lip̚ kaŋ</p>
+                <p class="lyric-translation hidden">保庇大船顺风驶入港</p>
+                <p class="lyric-pin hidden">pó-pì tuā-tsûn sūn-hong sueh li̍p káng</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">鱼货满满</p>
+                <p class="lyric-ipa hidden">hi he muã muã</p>
+                <p class="lyric-translation hidden">鱼货满满</p>
+                <p class="lyric-pin hidden">hî-hè muá-muá</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">真济担</p>
+                <p class="lyric-ipa hidden">t͡ɕin t͡se tã</p>
+                <p class="lyric-translation hidden">真多担</p>
+                <p class="lyric-pin hidden">tsin tsē tànn</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">会记着</p>
+                <p class="lyric-ipa hidden">e ki tioʔ</p>
+                <p class="lyric-translation hidden">曾记得</p>
+                <p class="lyric-pin hidden">ē-kì-tio̍h</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">囡仔时</p>
+                <p class="lyric-ipa hidden">kin a ɕi</p>
+                <p class="lyric-translation hidden">小时候</p>
+                <p class="lyric-pin hidden">kín-á-sî</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">爸爸常常</p>
+                <p class="lyric-ipa hidden">pa pa ɕiɔŋ ɕiɔŋ</p>
+                <p class="lyric-translation hidden">爸爸常常</p>
+                <p class="lyric-pin hidden">pá-pah siông-siông</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">𤆬我去海边</p>
+                <p class="lyric-ipa hidden">t͡sʰua gua kʰi hai pĩ</p>
+                <p class="lyric-translation hidden">带我去海边</p>
+                <p class="lyric-pin hidden">tshuā guá khì hái-pinn</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">看船吹风淋雨出帆去</p>
+                <p class="lyric-ipa hidden">kʰuã t͡sun t͡sʰe hɔŋ lam hɔ t͡sʰut̚ pʰaŋ kʰi</p>
+                <p class="lyric-translation hidden">看船吹风淋雨出航去</p>
+                <p class="lyric-pin hidden">khuànn tsûn tshe-hong lâm-hōo tshut-phâng--khì</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">听螺声响起啊念歌诗</p>
+                <p class="lyric-ipa hidden">tʰiã le ɕiã hiɔŋ kʰi a liam kua ɕi</p>
+                <p class="lyric-translation hidden">听螺声响起啊唱歌谣</p>
+                <p class="lyric-pin hidden">thiann lê-siann hióng khí--ah liām kua-si</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">天有偌大</p>
+                <p class="lyric-ipa hidden">tʰĩ u lua tua</p>
+                <p class="lyric-translation hidden">天有多大</p>
+                <p class="lyric-pin hidden">thinn ū luā tuā</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">海有偌阔</p>
+                <p class="lyric-ipa hidden">hai u lua kʰuaʔ</p>
+                <p class="lyric-translation hidden">海有多阔</p>
+                <p class="lyric-pin hidden">hái ū luā khuah</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">讨海的人赶流落水</p>
+                <p class="lyric-ipa hidden">tʰo hai e laŋ kuã lau loʔ t͡sui</p>
+                <p class="lyric-translation hidden">打鱼的人赶潮下水</p>
+                <p class="lyric-pin hidden">thó-hái ê lâng kuánn lâu lo̍h tsuí</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">希望有鱼来入网</p>
+                <p class="lyric-ipa hidden">hi baŋ u hi lai lip̚ baŋ</p>
+                <p class="lyric-translation hidden">希望有鱼来入网</p>
+                <p class="lyric-pin hidden">hi-bāng ū hî lâi li̍p bāng</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">天有偌大</p>
+                <p class="lyric-ipa hidden">tʰĩ u lua tua</p>
+                <p class="lyric-translation hidden">天有多大</p>
+                <p class="lyric-pin hidden">thinn ū luā tuā</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">海有偌阔</p>
+                <p class="lyric-ipa hidden">hai u lua kʰuaʔ</p>
+                <p class="lyric-translation hidden">海有多阔</p>
+                <p class="lyric-pin hidden">hái ū luā khuah</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">保庇大船顺风楔入港</p>
+                <p class="lyric-ipa hidden">po pi tua t͡sun sun hɔŋ sueʔ lip̚ kaŋ</p>
+                <p class="lyric-translation hidden">保庇大船顺风驶入港</p>
+                <p class="lyric-pin hidden">pó-pì tuā-tsûn sūn-hong sueh li̍p káng</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">鱼货满满</p>
+                <p class="lyric-ipa hidden">hi he muã muã</p>
+                <p class="lyric-translation hidden">鱼货满满</p>
+                <p class="lyric-pin hidden">hî-hè muá-muá</p>
+            </div>
+            <div class="lyric-block">
+                <p class="lyric-line">真济担</p>
+                <p class="lyric-ipa hidden">t͡ɕin t͡se tã</p>
+                <p class="lyric-translation hidden">真多担</p>
+                <p class="lyric-pin hidden">tsin tsē tànn</p>
+            </div>
+        </div>
+        <br>
+        <div class="pdf-container">
+            <embed src="../file/yg.pdf" type="application/pdf" width="100%" height="800px">
+        </div>
+        <div class="mobile-pdf">
+            <a href="../file/yg.pdf" target="_blank">歌谱：鱼歌</a>
+        </div>
+    </article>
+    <br>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('toggle-ipa').addEventListener('click', function() {
+                var ipaSymbols = document.querySelectorAll('.lyric-ipa');
+                ipaSymbols.forEach(function(ipa) {
+                    ipa.classList.toggle('show');
+                });
+            });
+            document.getElementById('toggle-translation').addEventListener('click', function() {
+                var translations = document.querySelectorAll('.lyric-translation');
+                translations.forEach(function(translation) {
+                    translation.classList.toggle('show');
+                });
+            });
+            document.getElementById('toggle-pin').addEventListener('click', function() {
+                var pinyin = document.querySelectorAll('.lyric-pin');
+                pinyin.forEach(function(pin) {
+                    pin.classList.toggle('show');
+                });
+            });
+        });
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            const navList = document.querySelector('.nav-list');
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

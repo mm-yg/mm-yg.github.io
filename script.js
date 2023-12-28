@@ -7,26 +7,9 @@ document.getElementById('searchBox').addEventListener('keyup', function(event) {
 const pages = [
     { title: '真的爱你', url: 'html/zdan.html' },
     { title: '爱人如己', url: 'html/arrj.html' },
-    { title: '布谷鸟', url: 'html/bgn.html' },
     { title: '鱼歌', url: 'html/yg.html' },
     { title: '我们在此', url: 'html/wmzc.html' },
-    { title: '你要啷个', url: 'html/nylg.html' },
-    { title: '日安，你好', url: 'html/ranh.html' },
-    { title: '月灯谣', url: 'html/ydy.html' },
-    { title: '母语', url: 'html/my.html' },
-    { title: '不怕大老虎', url: 'html/bpdlh.html' },
-    { title: '上海爱情故事2019', url: 'html/shaqgs2019.html' },
-    { title: '望祭山', url: 'html/wjs.html' },
-    { title: '少年·北京', url: 'html/snbj.html' },
-    { title: '青山绿水', url: 'html/qsls.html' },
-    { title: '你清澈的双眼', url: 'html/nqcdsy.html' },
-    { title: '日头出来晒山岗', url: 'html/rtclssg.html' },
-    { title: '小猫眼青青', url: 'html/xmyqq.html' },
-    { title: '乌拉勒吉', url: 'html/wllj.html' },
-    { title: '打鱼归来', url: 'html/dygl.html' },
-    { title: '不要放弃', url: 'html/byfq.html' },
-    { title: '憧憬未来', url: 'html/cjwl.html' },
-    { title: '答案在风中飘', url: 'html/dazfzp.html' },
+    { title: 'Flag', url: 'html/flag.html' },
 ];
 
 function searchWebsite() {

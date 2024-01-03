@@ -8,7 +8,7 @@
 }
 
 html, body {
-    background-image: url("../img/wmzc.jpg");
+    background-image: url("../img/xmyqq.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -143,7 +143,7 @@ button:hover {
 @media screen and (max-width: 768px) {
     html, body {
         background-image: none;
-        background: linear-gradient(233deg, #41cdb1, #e8e8e8);
+        background: linear-gradient(-66deg, #f2eda9, #5dda7e, #6bceff);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;

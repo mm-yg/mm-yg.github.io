@@ -6,10 +6,14 @@ document.getElementById('searchBox').addEventListener('keyup', function(event) {
 
 const pages = [
     { title: '真的爱你', url: 'html/zdan.html' },
+    /*
     { title: '爱人如己', url: 'html/arrj.html' },
     { title: '鱼歌', url: 'html/yg.html' },
     { title: '我们在此', url: 'html/wmzc.html' },
+    { title: '望祭山', url: 'html/wjs.html' },
+    { title: '小猫眼青青', url: 'html/xmyqq.html' },
     { title: 'Flag', url: 'html/flag.html' },
+    */
 ];
 
 function searchWebsite() {

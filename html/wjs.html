@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/wjs.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
+    <title>望祭山</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="../index.html">56+ ❤️</a></li>
+            <li><a href="../about.html">缘起 💡</a></li>
+            <li><a href="../thanks.html">致谢 🌸</a></li>
+            <li><a href="../music.html">歌声 🔍</a></li>
+            <li><a href="https://space.bilibili.com/429836216">b站 🍻</a></li>
+        </ul>
+        <button class="hamburger">👀</button>
+    </nav>
+    <div class="bg-text">
+        2023年12月<br>
+        吉林延边安图<br>
+        敏儀 摄
+    </div>
+    <article>
+        <h1>
+            <span class="h1-manchu">ᡥᠠᡵᡤᠠᡧᠠᠮᡝ ᠸᡝᠴᡝᡵᡝ ᠠᠯᡳᠨ</span><br>
+            望祭山
+        </h1>
+        <p style="text-align: center;">2024年1月 · 美国加州戈利塔</p>
+        <!--
+        <iframe src="&autoplay=0&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
+        -->
+        <p>
+            语言：中国手语，满语，汉语-普通话<br>
+            作词：王硕，阿克善<br>
+            作曲/原唱：阿克善<br>
+            编曲：阿克善，阿茹娜<br>
+            录像：弦索<br>
+            素材：敏儀，周周，DuDu<br>
+            国际音标/手语/翻唱：鹿鸣<br>
+            参考：<br>
+            [1] 爱新觉罗·乌拉熙春. 满语语法 [M]. 呼和浩特: 内蒙古人民出版社, 1983.<br>
+            [2] 沒名字不在綫. 歌词搬运 [EB/OL]. [2023-06-12]. https://www.bilibili.com/read/cv24306022<br>
+            [3] 云上初感. 满语歌曲《望祭山》 [EB/OL]. [2015-04-20]. https://www.bilibili.com/video/BV1Ws411D7n5<br>
+            在线查询：<br>
+            [1] <a href="https://www.dorontu.com/home">朝花·夕拾词典</a><br>
+            [2] <a href="http://www.manchu.work/dicts">满语字典</a>
+        </p>
+        <br>
+        <div class="button-container">
+            <button id="toggle-ipa">音标</button>
+            <button id="toggle-translation">翻译</button>
+            <button id="toggle-pin">穆麟德</button>
+        </div>
+        <div id="lyrics-container">
+            <div class="lyric-block-manchu">
+                <p class="lyric-line-manchu" style="font-family: 'Noto Serif SC', serif; font-size: 20px">歌词</p>
+                <div class="bundle">
+                    <p class="lyric-ipa hidden" style="font-family: 'Noto Serif SC', serif;">国际音标</p>
+                    <p class="lyric-translation hidden">翻译</p>
+                    <p class="lyric-pin hidden" style="font-family: 'Noto Serif SC', serif;">穆麟德转写</p>
+                </div>
+            </div>
+            <div class="lyric-block-manchu">
+                <p class="lyric-line-manchu">ᠵᠠᠯᠠᠨ ‍ᡳ ᠰᡳᡩᡝᠨᡩᡝ ᠮᡳᠨᡳ ᡧᠠᠩᡤᡳᠶᠠᠨ ᠠᠯᡳᠨ ᠪᡳ</p>
+                <div class="bundle">
+                    <p class="lyric-ipa hidden">t͡ʃɑlɑn i ɕitəntə mini ʃɑŋːjɑn ɑlin pi</p>
+                    <p class="lyric-translation hidden">天地之间有我的长白山</p>
+                    <p class="lyric-pin hidden">jalan i sidende mini šanggiyan alin bi</p>
+                </div>
+            </div>
+            <div class="lyric-block-manchu">
+                <p class="lyric-line-manchu">ᠠᠯᡳᠨ ‍ᡳ ᡥᠠᠨᠴᡳ ᠰᠠᡥᠠᠯᡳᠶᠠᠨ ᡠᠯᠠ ᡝᠶᡝᡵᡝ ᡨ᠋ᡠᡤᡳ ‍ᡳ ᠠᡩᠠᠯᡳ</p>
+                <div class="bundle">
+                    <p class="lyric-ipa hidden">ɑlin i χɑnt͡ɕʰi sɑχɑljɑn ulɑ əjərə tʰuki i ɑtɑli</p>
+                    <p class="lyric-translation hidden">白山之侧奔流我的黑龙江</p>
+                    <p class="lyric-pin hidden">alin i hanci sahaliyan ula eyere tugi i adali</p>
+                </div>
+            </div>
+            <div class="lyric-block-manchu">
+                <p class="lyric-line-manchu">ᠠᠯᡳᠨ ᠮᡠᡴᡝ ᡩᡝ ᠮᡠᠰᡝᡳ ᠮᠠᡶᠠᡵᡳ ᠪᠠᠨᠵᡳᡥᠠᠪᡳ</p>
+                <div class="bundle">
+                    <p class="lyric-ipa hidden">ɑlin mukʰə tə musəi mɑfɑri pɑnt͡ɕiχɑpi</p>
+                    <p class="lyric-translation hidden">山水之间勤劳的人们代代成长</p>
+                    <p class="lyric-pin hidden">alin muke de musei mafari banjihabi</p>
+                </div>
+            </div>
+            <div class="lyric-block-manchu">
+                <p class="lyric-line-manchu">ᠮᡠᡴᡡᠨ ‍ᡳ ᡝᠨᡝᠨ ᠠᠮᠪᠠ ᡴᡝᠰᡳ ᠪᡝ ᠠᠯᡳᠮᠪᡳ</p>
+                <div class="bundle">
+                    <p class="lyric-ipa hidden">muqʰʊn i ənən ɑmpɑ kʰəɕi pə ɑlimpi</p>
+                    <p class="lyric-translation hidden">故乡的恩德后人永不忘</p>
+                    <p class="lyric-pin hidden">mukūn i enen amba kesi be alimbi</p>
+                </div>
+            </div>
+            <div class="lyric-block-cn">
+                <p class="lyric-line-cn">天地之间有我的长白山</p>
+                <p class="lyric-line-cn">白山之侧奔流我的黑龙江</p>
+                <p class="lyric-line-cn">山水之间勤劳的人们代代成长</p>
+                <p class="lyric-line-cn" style="margin-top: 0; margin-bottom: 30px;">故乡的恩德后人永不忘</p>
+            </div>
+            <div class="lyric-block-manchu">
+                <p class="lyric-line-manchu">ᠠᡵᡧᠠᠨ ᠪᡠᡵᡤᠠ ᡩᡝ ᡶᡠᠯᡝᡥᡝ ᠠᡴᡡᠴᡳ</p>
+                <div class="bundle">
+                    <p class="lyric-ipa hidden">ɑrʃɑn purqɑ tə fuləxə ɑqʰʊt͡ɕʰi</p>
+                    <p class="lyric-translation hidden">柳若无根</p>
+                    <p class="lyric-pin hidden">aršan burga de fulehe akūci</p>
+                </div>
+            </div>
+            <div class="lyric-block-manchu">
+                <p class="lyric-line-manchu">ᡨᡝ᠋ᡵᡝ ᡠᡨ᠌ᡥᠠᡳ ᡤᠠᡵᡤᠠᠨ ᠪᠠᠨᠵᡳᡵᠠᡴᡡ</p>
+                <div class="bundle">
+                    <p class="lyric-ipa hidden">tʰərə utʰχɑi qɑrqɑn pɑnt͡ɕirɑqʰʊ</p>
+                    <p class="lyric-translation hidden">便不生枝</p>
+                    <p class="lyric-pin hidden">tere uthai gargan banjirakū</p>
+                </div>
+            </div>
+            <div class="lyric-block-manchu">
+                <p class="lyric-line-manchu">ᡝᡵᡝ ᡠᡨ᠌ᡥᠠᡳ ᡤᠠᡧᠠᠨ ᠪᡝ ᡴᡳᡩᡠᡵᡝ ᠠᡴᠠᠴᡠᠨ ᡳᠨᡠ</p>
+                <div class="bundle">
+                    <p class="lyric-ipa hidden">ərə utʰχɑi qɑʃɑn pə kʰiturə ɑqʰɑt͡ʃʰun inu</p>
+                    <p class="lyric-translation hidden">感怀故土</p>
+                    <p class="lyric-pin hidden">ere uthai gašan be kidure akacun inu</p>
+                </div>
+            </div>
+            <div class="lyric-block-manchu">
+                <p class="lyric-line-manchu">ᡝᡵᡝ ᡠᡨ᠌ᡥᠠᡳ ᡤᠠᡧᠠᠨ ᠪᡝ ᡴᡳᡩᡠᡵᡝ ᡤᡡᠨᡳᠨ ᡳᠨᡠ</p>
+                <div class="bundle">
+                    <p class="lyric-ipa hidden">ərə utʰχɑi qɑʃɑn pə kʰiturə qʊnin inu</p>
+                    <p class="lyric-translation hidden">就生思乡之情</p>
+                    <p class="lyric-pin hidden">ere uthai gašan be kidure gūnin inu</p>
+                </div>
+            </div>
+            <div class="lyric-block-manchu">
+                <p class="lyric-line-manchu">ᠵᠠᠯᠠᠨ ‍ᡳ ᠰᡳᡩᡝᠨᡩᡝ ᠮᡳᠨᡳ ᡧᠠᠩᡤᡳᠶᠠᠨ ᠠᠯᡳᠨ ᠪᡳ</p>
+                <div class="bundle">
+                    <p class="lyric-ipa hidden">t͡ʃɑlɑn i ɕitəntə mini ʃɑŋːjɑn ɑlin pi</p>
+                    <p class="lyric-translation hidden">天地之间有我的长白山</p>
+                    <p class="lyric-pin hidden">jalan i sidende mini šanggiyan alin bi</p>
+                </div>
+            </div>
+            <div class="lyric-block-manchu">
+                <p class="lyric-line-manchu">ᠠᠯᡳᠨ ‍ᡳ ᡥᠠᠨᠴᡳ ᠰᠠᡥᠠᠯᡳᠶᠠᠨ ᡠᠯᠠ ᡝᠶᡝᡵᡝ ᡨ᠋ᡠᡤᡳ ‍ᡳ ᠠᡩᠠᠯᡳ</p>
+                <div class="bundle">
+                    <p class="lyric-ipa hidden">ɑlin i χɑnt͡ɕʰi sɑχɑljɑn ulɑ əjərə tʰuki i ɑtɑli</p>
+                    <p class="lyric-translation hidden">白山之侧奔流我的黑龙江</p>
+                    <p class="lyric-pin hidden">alin i hanci sahaliyan ula eyere tugi i adali</p>
+                </div>
+            </div>
+            <div class="lyric-block-manchu">
+                <p class="lyric-line-manchu">ᠮᡠᠰᡝᡳ ᠠᡳᠨᡠ ᠮᠠᡶᠠᡵᡳ ᡤᠠᡧᠠᠨ ᠪᡝ ᠸᠠᠯᡳᠶᠠᠮᠪᡳ</p>
+                <div class="bundle">
+                    <p class="lyric-ipa hidden">musəi ɑinu mɑfɑri qɑʃɑn pə wɑljɑmpi</p>
+                    <p class="lyric-translation hidden">英雄的后代怎能将故乡遗忘</p>
+                    <p class="lyric-pin hidden">musei ainu mafari gašan be waliyambi</p>
+                </div>
+            </div>
+            <div class="lyric-block-manchu">
+                <p class="lyric-line-manchu">ᡝᠨᡝᠩᡤᡳ ᠮᠠᡶᠠᡵᡳ ᡤᠠᡧᠠᠨ ᠪᡝ ᡥᠠᡵᡤᠠᡧᠠᠮᠪᡳ</p>
+                <div class="bundle">
+                    <p class="lyric-ipa hidden">ənəŋːi mɑfɑri qɑʃɑn pə χɑrqɑʃɑmpi</p>
+                    <p class="lyric-translation hidden">愿我家乡山水永绵长</p>
+                    <p class="lyric-pin hidden">enenggi mafari gašan be hargašambi</p>
+                </div>
+            </div>
+            <div class="lyric-block-cn">
+                <p class="lyric-line-cn">天地之间有我的长白山</p>
+                <p class="lyric-line-cn">白山之侧奔流我的黑龙江</p>
+                <p class="lyric-line-cn">英雄的后代怎能将故乡遗忘</p>
+                <p class="lyric-line-cn" style="margin-top: 0; margin-bottom: 30px;">愿我家乡山水永绵长</p>
+            </div>
+            <div class="lyric-block-manchu">
+                <p class="lyric-line-manchu">ᡴᡳᡨᡠᡥᠠᠨ ᡩᡝ ᠪᡝᡵᡤᡝ ᠠᡴᡡᠴᡳ</p>
+                <div class="bundle">
+                    <p class="lyric-ipa hidden">kʰitʰuχɑn tə pərkə ɑqʰʊt͡ɕʰi</p>
+                    <p class="lyric-translation hidden">琴上无弦</p>
+                    <p class="lyric-pin hidden">kituhan de berge akūci</p>
+                </div>
+            </div>
+            <div class="lyric-block-manchu">
+                <p class="lyric-line-manchu">ᡨᡝ᠋ᡵᡝ ᡠᡨ᠌ᡥᠠᡳ ᡠᠴᡠᠯᡝᡵᠠᡴᡡ</p>
+                <div class="bundle">
+                    <p class="lyric-ipa hidden">tʰərə utʰχɑi ut͡ʃʰulərɑqʰʊ</p>
+                    <p class="lyric-translation hidden">则不能唱</p>
+                    <p class="lyric-pin hidden">tere uthai uculerakū</p>
+                </div>
+            </div>
+            <div class="lyric-block-manchu">
+                <p class="lyric-line-manchu">ᡝᡵᡝ ᡠᡨ᠌ᡥᠠᡳ ᡤᠠᡧᠠᠨ ᠪᡝ ᡴᡳᡩᡠᡵᡝ ᠠᡴᠠᠴᡠᠨ ᡳᠨᡠ</p>
+                <div class="bundle">
+                    <p class="lyric-ipa hidden">ərə utʰχɑi qɑʃɑn pə kʰiturə ɑqʰɑt͡ʃʰun inu</p>
+                    <p class="lyric-translation hidden">感怀故土</p>
+                    <p class="lyric-pin hidden">ere uthai gašan be kidure akacun inu</p>
+                </div>
+            </div>
+            <div class="lyric-block-manchu">
+                <p class="lyric-line-manchu">ᡝᡵᡝ ᡠᡨ᠌ᡥᠠᡳ ᡤᠠᡧᠠᠨ ᠪᡝ ᡴᡳᡩᡠᡵᡝ ᡤᡡᠨᡳᠨ ᡳᠨᡠ</p>
+                <div class="bundle">
+                    <p class="lyric-ipa hidden">ərə utʰχɑi qɑʃɑn pə kʰiturə qʊnin inu</p>
+                    <p class="lyric-translation hidden">就生思乡之情</p>
+                    <p class="lyric-pin hidden">ere uthai gašan be kidure gūnin inu</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <br>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('toggle-ipa').addEventListener('click', function() {
+                var ipaSymbols = document.querySelectorAll('.lyric-ipa');
+                ipaSymbols.forEach(function(ipa) {
+                    ipa.classList.toggle('show');
+                });
+            });
+            document.getElementById('toggle-translation').addEventListener('click', function() {
+                var translations = document.querySelectorAll('.lyric-translation');
+                translations.forEach(function(translation) {
+                    translation.classList.toggle('show');
+                });
+            });
+            document.getElementById('toggle-pin').addEventListener('click', function() {
+                var pinyin = document.querySelectorAll('.lyric-pin');
+                pinyin.forEach(function(pin) {
+                    pin.classList.toggle('show');
+                });
+            });
+        });
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            const navList = document.querySelector('.nav-list');
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

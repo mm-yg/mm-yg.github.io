@@ -8,7 +8,7 @@
 }
 
 html, body {
-    background-image: url("../img/wmzc.jpg");
+    background-image: url("../img/wjs.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,9 +66,23 @@ article {
 }
 
 h1 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     line-height: 1.5;
     text-align: center;
     font-size: 30px;
+    writing-mode: vertical-lr;
+}
+
+@font-face {
+    font-family: "Noto Sans Mongolian";
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mongolian&display=swap');
+}
+
+.h1-manchu {
+    font-size: 30px;
+    font-family: "Noto Sans Mongolian", sans-serif;
 }
 
 p {
@@ -78,49 +92,42 @@ p {
 }
 
 .button-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 19px;
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 19px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-}
-
-button:hover {
-    color: #000000;
-    background-color: #ffffff;
-    text-shadow: none;
-}
-
-.lyric-line,
-.lyric-ipa,
-.lyric-translation {
-    text-align: center;
-}
-
-.hidden {
     display: none;
 }
 
-.lyric-ipa {
+.lyric-block-manchu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.lyric-line-manchu {
+    font-family: "Noto Sans Mongolian", sans-serif;
+    font-size: 16px;
+    writing-mode: vertical-lr;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 17%;
+    margin-right: 17%;
+}
+
+.bundle {
+    flex-direction: column;
+}
+
+.lyric-line-cn {
+    text-align: center;
+}
+
+.lyric-ipa,
+.lyric-pin {
     font-family: "Times New Roman", Times, sans-serif;
     color: #fffc30;
 }
 
-.lyric-translation {
+.lyric-translation,
+.lyric-pin {
     font-style: italic;
-}
-
-.lyric-ipa.show,
-.lyric-translation.show {
-    display: block;
 }
 
 .hamburger {
@@ -143,7 +150,7 @@ button:hover {
 @media screen and (max-width: 768px) {
     html, body {
         background-image: none;
-        background: linear-gradient(233deg, #41cdb1, #e8e8e8);
+        background: linear-gradient(-26deg, #9dcaec, #c4c4c4);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -175,5 +182,57 @@ button:hover {
 
     .nav-list.active {
         display: flex;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 19px;
+        background-color: transparent;
+        border: 2px solid #ffffff;
+        border-radius: 19px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    }
+
+    button:hover {
+        color: #000000;
+        background-color: #ffffff;
+        text-shadow: none;
+    }
+
+    .lyric-block-manchu {
+        display: block;
+        margin: 0;
+    }
+    
+    .lyric-line-manchu,
+    .lyric-line-cn,
+    .lyric-ipa,
+    .lyric-translation,
+    .lyric-pin {
+        text-align: center;
+        font-size: 20px;
+        writing-mode: horizontal-tb;
+        margin: 12px auto;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .lyric-ipa.show,
+    .lyric-translation.show,
+    .lyric-pin.show {
+        display: block;
+    }
+
+    .bundle {
+        margin-left: 0;
     }
 }

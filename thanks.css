@@ -57,7 +57,7 @@ nav {
 }
 
 article {
-    max-width: 900px auto;
+    max-width: 900px;
     width: 90%;
     margin: 12px auto;
     color: #ffffff;

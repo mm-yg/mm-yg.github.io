@@ -95,6 +95,7 @@ p {
     display: none;
 }
 
+.lyric-block,
 .lyric-block-manchu {
     display: flex;
     align-items: center;
@@ -204,6 +205,10 @@ p {
         color: #000000;
         background-color: #ffffff;
         text-shadow: none;
+    }
+
+    .lyric-block {
+        display: none;
     }
 
     .lyric-block-manchu {

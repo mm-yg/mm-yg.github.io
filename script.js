@@ -10,7 +10,9 @@ const pages = [
     { title: '鱼歌', url: 'html/yg.html' },
     { title: '我们在此', url: 'html/wmzc.html' },
     { title: 'Flag', url: 'html/flag.html' },
+    { title: '母语', url: 'html/my.html' },
     { title: '望祭山', url: 'html/wjs.html' },
+    { title: '憧憬未来', url: 'html/cjwl.html' },
     { title: '小猫眼青青', url: 'html/xmyqq.html' },
 ];
 

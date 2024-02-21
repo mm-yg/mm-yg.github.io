@@ -92,32 +92,41 @@ p {
 }
 
 .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 19px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 19px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    color: #000000;
+    background-color: #ffffff;
+    text-shadow: none;
+}
+
+.lyric-line,
+.lyric-line-cn,
+.lyric-ipa,
+.lyric-translation,
+.lyric-pin {
+    text-align: center;
+}
+
+.hidden {
     display: none;
 }
 
-.lyric-block,
-.lyric-block-manchu {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.lyric-line-manchu {
+.lyric-line {
     font-family: "Noto Sans Mongolian", sans-serif;
-    font-size: 16px;
-    writing-mode: vertical-lr;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 17%;
-    margin-right: 17%;
-}
-
-.bundle {
-    flex-direction: column;
-}
-
-.lyric-line-cn {
-    text-align: center;
 }
 
 .lyric-ipa,
@@ -129,6 +138,12 @@ p {
 .lyric-translation,
 .lyric-pin {
     font-style: italic;
+}
+
+.lyric-ipa.show,
+.lyric-translation.show,
+.lyric-pin.show {
+    display: block;
 }
 
 .hamburger {
@@ -183,61 +198,5 @@ p {
 
     .nav-list.active {
         display: flex;
-    }
-
-    .button-container {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    button {
-        padding: 10px 20px;
-        font-size: 19px;
-        background-color: transparent;
-        border: 2px solid #ffffff;
-        border-radius: 19px;
-        cursor: pointer;
-        transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-    }
-
-    button:hover {
-        color: #000000;
-        background-color: #ffffff;
-        text-shadow: none;
-    }
-
-    .lyric-block {
-        display: none;
-    }
-
-    .lyric-block-manchu {
-        display: block;
-        margin: 0;
-    }
-    
-    .lyric-line-manchu,
-    .lyric-line-cn,
-    .lyric-ipa,
-    .lyric-translation,
-    .lyric-pin {
-        text-align: center;
-        font-size: 20px;
-        writing-mode: horizontal-tb;
-        margin: 12px auto;
-    }
-
-    .hidden {
-        display: none;
-    }
-
-    .lyric-ipa.show,
-    .lyric-translation.show,
-    .lyric-pin.show {
-        display: block;
-    }
-
-    .bundle {
-        margin-left: 0;
     }
 }
